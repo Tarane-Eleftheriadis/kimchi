@@ -6,6 +6,11 @@ header .loggacontainer {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 391px) {
+  header .loggacontainer {
+    height: 30vh;
+  }
+}
 header .topnav a {
   display: flex;
   color: black;

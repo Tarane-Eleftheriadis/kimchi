@@ -10,6 +10,10 @@ header{
         width: 100vw;
         justify-content: center;
         align-items: center;
+
+        @media (min-width: 391px){
+            height: 30vh;
+        }
     }
 
     .topnav{
