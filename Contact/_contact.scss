@@ -1,8 +1,60 @@
+@import "../variables";
+
 body{
     background: rgb(245,245,131);
-background: linear-gradient(4deg, rgba(245,245,131,1) 0%, rgba(233,108,247,1) 100%);
+    background: linear-gradient(4deg, rgba(245,245,131,1) 0%, rgba(233,108,247,1) 100%);
+    
+}
+.styleBox{
+    display: flex;
+    flex-direction: column;
+    font-family: $primaryFont;
+
+    .contact{
+        color: rgb(255, 243, 7);
+    }
+    
+    .second, .info{
+        text-align: center;
+        margin: 20px;
+    }
+}
+.box{
+    border: 2px solid white;
 }
 
-h1{
-   color: green($color: #000000)
-}
+    .formContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+        .namn, .mail{
+            width: 100vh;
+            height: 100vhx;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid white;
+            
+        }
+        .message{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            background:none;
+            
+        }
+    }
+
+    .google-map {
+        padding-bottom: 70%;
+        position: relative;
+   }
+   
+   .google-map iframe {
+        height: 50%;
+        width: 50%;
+        left: 0;
+        top: 20px;
+        position: absolute;
+   }
