@@ -1,37 +1,53 @@
-header {
-  background: white;
-}
 header .loggacontainer {
   display: flex;
   background: #F0669E;
-  height: 30vh;
+  height: 25vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
 }
 header .topnav a {
   display: flex;
-  color: #F0669E;
+  color: black;
   margin-top: 20px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
 }
 header .topnav .myLinks {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 header .logga-header {
-  height: 70%;
+  height: 110%;
 }
 
-h1 {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.welcomeText {
+  width: 90vw;
+  height: auto;
+  background-color: #e0e0e0;
   text-align: center;
+  margin: 20px 0;
+  padding: 20px 0px;
+}
+div.welcomeText h1 {
+  font-family: "Montserrat", sans-serif;
+}
+div.welcomeText h2 {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 button {
-  padding: 20px 50px;
-  font-size: 20px;
+  padding: 15px 40px;
+  font-size: 15px;
   color: white;
   background-color: rgb(67, 67, 67);
   border: none;
@@ -39,19 +55,44 @@ button {
   border-radius: 20px;
 }
 
+.chicken-and-mushroom {
+  width: 90vw;
+}
+
+div.openhoursKim-Chi {
+  background: #e0e0e0;
+  width: 90vw;
+  text-align: center;
+  margin: 20px 0;
+}
+div.openhoursKim-Chi p {
+  font-size: 18px;
+  line-height: 0.8;
+}
+
+div.firstpage-contactKim-Chi {
+  background: #e0e0e0;
+  width: 90vw;
+  text-align: center;
+}
+div.firstpage-contactKim-Chi p {
+  font-size: 18px;
+  line-height: 0.8;
+}
+
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #F0669E;
-  height: 30vh;
+  margin-top: 20px;
   width: 100vw;
 }
 footer .footerInfo {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   line-height: 0.5;
-}
-footer .footermedia {
-  text-align: center;
 }
 
 body {
@@ -111,4 +152,5 @@ body {
 
 body {
   margin: 0%;
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+@mixin button-mobile{
+    padding: 15px 40px;
+    font-size: 15px;
+    color: $secondaryFontColor;
+    background-color: rgb(67, 67, 67);
+    border: none;
+    font-weight: 700;
+    border-radius: 20px;
+}
