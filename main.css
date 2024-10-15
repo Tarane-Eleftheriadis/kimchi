@@ -14,6 +14,11 @@ header .topnav a {
   font-size: 25px;
   font-weight: 700;
 }
+@media (min-width: 391px) {
+  header .topnav a {
+    font-size: 10px;
+  }
+}
 header .topnav .myLinks {
   display: flex;
   justify-content: space-evenly;
@@ -28,6 +33,11 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 391px) {
+  main {
+    background-color: #e0e0e0;
+  }
+}
 
 div.welcomeText {
   width: 90vw;
@@ -37,12 +47,28 @@ div.welcomeText {
   margin: 20px 0;
   padding: 20px 0px;
 }
+@media (min-width: 391px) {
+  div.welcomeText {
+    width: 60vw;
+    background-color: #ffffff;
+  }
+}
 div.welcomeText h1 {
   font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 391px) {
+  div.welcomeText h1 {
+    font-size: 20px;
+  }
 }
 div.welcomeText h2 {
   font-size: 18px;
   font-weight: 400;
+}
+@media (min-width: 391px) {
+  div.welcomeText h2 {
+    font-size: 10px;
+  }
 }
 
 button {
@@ -54,9 +80,25 @@ button {
   font-weight: 700;
   border-radius: 20px;
 }
+@media (min-width: 391px) {
+  button {
+    padding: 8px 20px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(67, 67, 67);
+    border: none;
+    font-weight: 700;
+    border-radius: 20px;
+  }
+}
 
 .chicken-and-mushroom {
   width: 90vw;
+}
+@media (min-width: 391px) {
+  .chicken-and-mushroom {
+    width: 60vw;
+  }
 }
 
 div.openhoursKim-Chi {
@@ -65,9 +107,20 @@ div.openhoursKim-Chi {
   text-align: center;
   margin: 20px 0;
 }
+@media (min-width: 391px) {
+  div.openhoursKim-Chi {
+    width: 60vw;
+    background-color: #ffffff;
+  }
+}
 div.openhoursKim-Chi p {
   font-size: 18px;
   line-height: 0.8;
+}
+@media (min-width: 391px) {
+  div.openhoursKim-Chi p {
+    font-size: 10px;
+  }
 }
 
 div.firstpage-contactKim-Chi {
@@ -75,9 +128,20 @@ div.firstpage-contactKim-Chi {
   width: 90vw;
   text-align: center;
 }
+@media (min-width: 391px) {
+  div.firstpage-contactKim-Chi {
+    width: 60vw;
+    background-color: #ffffff;
+  }
+}
 div.firstpage-contactKim-Chi p {
   font-size: 18px;
   line-height: 0.8;
+}
+@media (min-width: 391px) {
+  div.firstpage-contactKim-Chi p {
+    font-size: 10px;
+  }
 }
 
 footer {
@@ -88,25 +152,36 @@ footer {
   margin-top: 20px;
   width: 100vw;
 }
+@media (min-width: 391px) {
+  footer {
+    height: 40vh;
+  }
+}
 footer p {
   color: white;
   font-size: 15px;
   text-align: center;
   padding-bottom: 10px;
 }
-@media (min-width: 391px) {
-  footer {
-    height: 30vh;
-  }
-}
 footer .imgfooter {
   width: 40%;
+}
+@media (min-width: 391px) {
+  footer .imgfooter {
+    width: 8%;
+  }
 }
 footer .footerInfo {
   color: white;
   font-size: 20px;
   text-align: center;
   line-height: 0.5;
+}
+@media (min-width: 391px) {
+  footer .footerInfo p {
+    font-size: 8px;
+    line-height: 0;
+  }
 }
 
 hr {
