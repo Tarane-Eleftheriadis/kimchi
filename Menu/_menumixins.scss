@@ -1,0 +1,17 @@
+@mixin flex($flex:row, $justify:center, $align:center){
+    display:flex;
+    flex-direction: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin margin($top:1px,$bottom:1px,$left:1px,$right:1px){
+    margin-top: $top;
+    margin-bottom: $bottom;
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin border($size:4px,$style:dotted,$color:$primaryColor){
+    border: $size,$style,$color;
+}
