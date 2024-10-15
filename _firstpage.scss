@@ -10,10 +10,6 @@ header{
         width: 100vw;
         justify-content: center;
         align-items: center;
-
-        @media (min-width: 391px){
-            height: 30vh;
-        }
     }
 
     .topnav{
@@ -58,7 +54,7 @@ div.welcomeText{
     }
 
     h2{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
     }
 }
@@ -104,10 +100,33 @@ footer{
     margin-top: 20px;
     width: 100vw;
 
+    p{
+        color: $secondaryFontColor;
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    @media (min-width: 391px){
+        height: 30vh;
+    }
+
+    .imgfooter{
+        width: 40%;
+
+    }
+
     .footerInfo{
         color: $secondaryFontColor;
         font-size: 20px;
         text-align: center;
         line-height: 0.5;
+    
     }
+
+    
+}
+hr{
+    border: 1px solid white;
+    width: 40%;
 }

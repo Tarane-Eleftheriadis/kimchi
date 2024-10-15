@@ -6,11 +6,6 @@ header .loggacontainer {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 391px) {
-  header .loggacontainer {
-    height: 30vh;
-  }
-}
 header .topnav a {
   display: flex;
   color: black;
@@ -46,7 +41,7 @@ div.welcomeText h1 {
   font-family: "Montserrat", sans-serif;
 }
 div.welcomeText h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -93,11 +88,30 @@ footer {
   margin-top: 20px;
   width: 100vw;
 }
+footer p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 391px) {
+  footer {
+    height: 30vh;
+  }
+}
+footer .imgfooter {
+  width: 40%;
+}
 footer .footerInfo {
   color: white;
   font-size: 20px;
   text-align: center;
   line-height: 0.5;
+}
+
+hr {
+  border: 1px solid white;
+  width: 40%;
 }
 
 body {
