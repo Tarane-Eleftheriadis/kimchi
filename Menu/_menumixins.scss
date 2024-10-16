@@ -12,6 +12,23 @@
     margin-right: $right;
 }
 
+@mixin padding($top:1px,$bottom:1px,$left:1px,$right:1px){
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
 @mixin border($size:4px,$style:dotted,$color:$primaryColor){
     border: $size,$style,$color;
+}
+
+@mixin button(){
+    padding: 1rem 1rem;
+    font-size: 15px;
+    color: $secondaryFontColor;
+    background-color: rgb(67, 67, 67);
+    border: none;
+    font-weight: 600;
+    border-radius: 20px;
 }
