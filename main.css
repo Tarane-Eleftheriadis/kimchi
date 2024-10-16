@@ -1,7 +1,7 @@
-header .loggacontainer {
+header .header-container {
   display: flex;
   background: #F0669E;
-  height: 25vh;
+  height: 30vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -9,21 +9,35 @@ header .loggacontainer {
 header .topnav a {
   display: flex;
   color: black;
-  margin-top: 20px;
+  margin: 5% 0;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 @media (min-width: 391px) {
   header .topnav a {
-    font-size: 10px;
+    font-size: 0.8rem;
+    margin: 2% 0;
   }
 }
-header .topnav .myLinks {
+header .topnav a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 391px) {
+  header .topnav a:hover {
+    text-decoration: underline;
+  }
+}
+header .topnav .topnav-links {
   display: flex;
   justify-content: space-evenly;
 }
-header .logga-header {
+@media (min-width: 391px) {
+  header .topnav .topnav-links {
+    background: #f4f4f4;
+  }
+}
+header .header-logga-img {
   height: 110%;
 }
 
@@ -35,39 +49,43 @@ main {
 }
 @media (min-width: 391px) {
   main {
-    background-color: #e0e0e0;
+    background-color: #f4f4f4;
   }
 }
 
-div.welcomeText {
+div.firstpage-welcome-box {
   width: 90vw;
   height: auto;
-  background-color: #e0e0e0;
+  background-color: #f4f4f4;
   text-align: center;
-  margin: 20px 0;
   padding: 20px 0px;
+  margin-bottom: 5%;
 }
 @media (min-width: 391px) {
-  div.welcomeText {
+  div.firstpage-welcome-box {
     width: 60vw;
     background-color: #ffffff;
+    margin-bottom: 1%;
   }
 }
-div.welcomeText h1 {
-  font-family: "Montserrat", sans-serif;
+div.firstpage-welcome-box h1.firstpage-welcome-box-h1 {
+  font-size: 1.5rem;
 }
 @media (min-width: 391px) {
-  div.welcomeText h1 {
-    font-size: 20px;
+  div.firstpage-welcome-box h1.firstpage-welcome-box-h1 {
+    font-size: 1.5rem;
   }
 }
-div.welcomeText h2 {
-  font-size: 18px;
+div.firstpage-welcome-box h2.firstpage-welcome-box-h2 {
+  font-size: 1.2rem;
   font-weight: 400;
+  line-height: 1.4;
+  padding: 0 2% 5% 2%;
 }
 @media (min-width: 391px) {
-  div.welcomeText h2 {
-    font-size: 10px;
+  div.firstpage-welcome-box h2.firstpage-welcome-box-h2 {
+    font-size: 0.6rem;
+    padding: 0 5% 3% 5%;
   }
 }
 
@@ -92,55 +110,85 @@ button {
   }
 }
 
-.chicken-and-mushroom {
+.firstpage-img-chicken-and-mushroom {
   width: 90vw;
 }
 @media (min-width: 391px) {
-  .chicken-and-mushroom {
+  .firstpage-img-chicken-and-mushroom {
     width: 60vw;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
-div.openhoursKim-Chi {
-  background: #e0e0e0;
+div.firstpage-openinghours-contact-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 391px) {
+  div.firstpage-openinghours-contact-container {
+    flex-direction: row;
+  }
+}
+div.firstpage-openinghours-contact-container div.firstpage-openinghours {
+  background: #f4f4f4;
   width: 90vw;
   text-align: center;
   margin: 20px 0;
 }
 @media (min-width: 391px) {
-  div.openhoursKim-Chi {
-    width: 60vw;
+  div.firstpage-openinghours-contact-container div.firstpage-openinghours {
+    width: 30vw;
     background-color: #ffffff;
+    margin: 2% 2% 2% 0%;
   }
 }
-div.openhoursKim-Chi p {
-  font-size: 18px;
+div.firstpage-openinghours-contact-container div.firstpage-openinghours .firstpage-openinghours-h2 {
+  font-size: 1.2rem;
+}
+@media (min-width: 391px) {
+  div.firstpage-openinghours-contact-container div.firstpage-openinghours .firstpage-openinghours-h2 {
+    font-size: 1rem;
+  }
+}
+div.firstpage-openinghours-contact-container div.firstpage-openinghours p.firstpage-openinghours-p {
+  font-size: 1.2rem;
   line-height: 0.8;
 }
 @media (min-width: 391px) {
-  div.openhoursKim-Chi p {
-    font-size: 10px;
+  div.firstpage-openinghours-contact-container div.firstpage-openinghours p.firstpage-openinghours-p {
+    font-size: 0.6rem;
   }
 }
-
-div.firstpage-contactKim-Chi {
-  background: #e0e0e0;
+div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
+  background: #f4f4f4;
   width: 90vw;
   text-align: center;
+  margin-bottom: 5%;
 }
 @media (min-width: 391px) {
-  div.firstpage-contactKim-Chi {
-    width: 60vw;
+  div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
+    width: 30vw;
     background-color: #ffffff;
+    margin: 2% 0% 2% 2%;
   }
 }
-div.firstpage-contactKim-Chi p {
-  font-size: 18px;
+div.firstpage-openinghours-contact-container div.firstpage-contactinfo h2.firstpage-contactinfo-h2 {
+  font-size: 1.2rem;
+}
+@media (min-width: 391px) {
+  div.firstpage-openinghours-contact-container div.firstpage-contactinfo h2.firstpage-contactinfo-h2 {
+    font-size: 1rem;
+  }
+}
+div.firstpage-openinghours-contact-container div.firstpage-contactinfo p.firstpage-contactinfo-p {
+  font-size: 1.2rem;
   line-height: 0.8;
 }
 @media (min-width: 391px) {
-  div.firstpage-contactKim-Chi p {
-    font-size: 10px;
+  div.firstpage-openinghours-contact-container div.firstpage-contactinfo p.firstpage-contactinfo-p {
+    font-size: 0.6rem;
   }
 }
 
@@ -149,7 +197,6 @@ footer {
   flex-direction: column;
   align-items: center;
   background: #F0669E;
-  margin-top: 20px;
   width: 100vw;
 }
 @media (min-width: 391px) {
@@ -157,35 +204,39 @@ footer {
     height: 40vh;
   }
 }
-footer p {
-  color: white;
-  font-size: 15px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-footer .imgfooter {
+footer .footer-logga-img {
   width: 40%;
 }
 @media (min-width: 391px) {
-  footer .imgfooter {
+  footer .footer-logga-img {
     width: 8%;
   }
 }
-footer .footerInfo {
-  color: white;
-  font-size: 20px;
+footer p.footer-contactinfo-p {
   text-align: center;
-  line-height: 0.5;
+  color: white;
 }
 @media (min-width: 391px) {
-  footer .footerInfo p {
-    font-size: 8px;
+  footer p.footer-contactinfo-p {
+    color: white;
+    font-size: 0.5rem;
+    line-height: 0.5;
+  }
+}
+footer p.footer-copyright-text {
+  text-align: center;
+  color: white;
+  font-size: 0.7rem;
+}
+@media (min-width: 391px) {
+  footer p.footer-copyright-text {
+    color: white;
+    font-size: 0.4rem;
     line-height: 0;
   }
 }
-
-hr {
-  border: 1px solid white;
+footer hr {
+  border: 0.001rem solid white;
   width: 40%;
 }
 
