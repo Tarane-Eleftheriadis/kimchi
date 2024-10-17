@@ -1,0 +1,201 @@
+@import "../variables";
+@import "../mixins";
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; 
+    border: 0;
+}
+
+.contactBody {
+    font-family: $primaryFont;
+    background: $gradientColor;
+    color: $primaryFontColor;
+    margin: 0;
+    padding: 0;
+}
+
+.contactMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactUs {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 2rem;
+        color: $primaryFontColor;
+    }
+}
+
+.contactIntroduction {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+.contactFormSection {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+
+            input,
+            select,
+            textarea {
+                padding: 10px;
+                border: 2px solid blueviolet;
+                border-radius: 5px;
+                font-size: 1rem;
+                background-color: $secondaryColor;
+                color: $primaryFontColor;
+            }
+
+        }
+
+        .submitButton {
+            @include button-mobile;
+
+            &:hover,
+            &:focus {
+                background-color: darken($primaryColor, 10%);
+            }
+        }
+    }
+}
+
+.contactInfo {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            font-size: 1rem;
+            margin-bottom: 5px;
+
+            a {
+                color: blueviolet;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.googleMap {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+
+    iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 10px;
+    }
+}
+
+.additionalInfo {
+    max-width: 800px;
+    text-align: center;
+    padding: 0 10px;
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 768px) {
+    .contactMain {
+        padding: 40px;
+    }
+
+    .contactIntroduction,
+    .contactFormSection,
+    .contactInfo,
+    .googleMap,
+    .additionalInfo {
+        margin-bottom: 40px;
+    }
+
+    .contactHeader h1 {
+        font-size: 2.5rem;
+    }
+
+    .contactIntroduction h2 {
+        font-size: 2rem;
+    }
+
+    .contactIntroduction p,
+    .additionalInfo p {
+        font-size: 1.1rem;
+    }
+
+    .contactFormSection .contactForm {
+        .formGroup {
+            input,
+            select,
+            textarea {
+                font-size: 1.1rem;
+            }
+        }
+
+        .submitButton {
+            font-size: 1.1rem;
+            padding: 15px 50px;
+        }
+    }
+
+    .contactInfo h2 {
+        font-size: 2rem;
+    }
+
+    .contactInfo ul li {
+        font-size: 1.1rem;
+    }
+}
