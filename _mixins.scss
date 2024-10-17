@@ -17,3 +17,29 @@
     font-weight: 700;
     border-radius: 20px;
 }
+
+
+@mixin flex($flex:row, $justify:center, $align:center){
+    display:flex;
+    flex-direction: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin margin($top:1px,$bottom:1px,$left:1px,$right:1px){
+    margin-top: $top;
+    margin-bottom: $bottom;
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin padding($top:1px,$bottom:1px,$left:1px,$right:1px){
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin border($size:4px,$style:dotted,$color:$primaryColor){
+    border: $size,$style,$color;
+}
