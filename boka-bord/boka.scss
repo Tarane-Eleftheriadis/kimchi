@@ -1,0 +1,47 @@
+@import "../mixins";
+@import "../variables";
+
+body{
+    margin: 0;
+    font-family:$primaryFont;
+}
+
+main{
+    background-image: linear-gradient(180deg,#f5f583,#e96cf7);
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+img.boka-bord-img-matsal{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background: $secondaryColor;
+    padding: 3% 3% 30% 3%;
+    margin: 5%;
+
+    input{
+        margin: 1.5% 0;
+        color: rgb(140, 140, 140);
+        padding: 1.5%;
+
+    }
+    
+    .input-kommentar{
+        padding: 10%;
+    }
+}
