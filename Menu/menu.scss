@@ -1,0 +1,67 @@
+@import "menumixins.scss";
+@import "menuvaribles.scss";
+
+body{
+    margin: 0%;
+    font-family: $primaryFont;
+}
+
+main{
+    background-image: linear-gradient(180deg,#f5f583,#e96cf7);
+    height: 100%;
+    @include flex(column,flex-start,center);
+
+        #first-container{
+            @include border(4px,dotted,$primaryColor);
+        }
+
+        #second-container{
+            @include border(5px,double,$primaryColor);
+        }
+
+
+    .menu-container{
+        width: 90%;
+        @include margin(20px);
+        @include flex(row,space-between,center);
+
+        @media (min-width:391px){
+            width: 40%;
+         }
+      
+        
+        .container{
+            @include flex(column,space-between,space-evenly);
+            width: 80%;
+            @include margin(0,0,0,1rem);
+
+            #specialfont{
+             font-family: $menuspecialfont;
+             color: $primaryColor;
+            }
+
+            .menu-container {
+                @include flex(row,space-between);
+            }
+
+            .h2{
+                @include flex(row,flex-start);
+            }
+
+           
+
+            .item{
+                @include flex(row, space-between);
+            }
+
+            button{
+                @include button();
+
+                @media (min-width:391px){
+                    width: 40%;
+                 }
+            }
+        }
+
+    }
+}
