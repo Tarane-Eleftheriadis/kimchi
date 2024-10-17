@@ -24,6 +24,10 @@ main{
         width: 90%;
         @include margin(20px);
         @include flex(row,space-between,center);
+
+        @media (min-width:391px){
+            width: 40%;
+         }
       
         
         .container{
@@ -43,13 +47,19 @@ main{
             .h2{
                 @include flex(row,flex-start);
             }
+
            
+
             .item{
                 @include flex(row, space-between);
             }
 
             button{
                 @include button();
+
+                @media (min-width:391px){
+                    width: 40%;
+                 }
             }
         }
 

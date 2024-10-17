@@ -28,6 +28,11 @@ main .menu-container {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 391px) {
+  main .menu-container {
+    width: 40%;
+  }
+}
 main .menu-container .container {
   display: flex;
   flex-direction: column;
@@ -69,4 +74,9 @@ main .menu-container .container button {
   border: none;
   font-weight: 600;
   border-radius: 20px;
+}
+@media (min-width: 391px) {
+  main .menu-container .container button {
+    width: 40%;
+  }
 }/*# sourceMappingURL=menu.css.map */
