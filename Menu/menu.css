@@ -67,16 +67,23 @@ main .menu-container .container .item {
   align-items: center;
 }
 main .menu-container .container button {
-  padding: 1rem 1rem;
+  padding: 15px 40px;
   font-size: 15px;
   color: white;
   background-color: rgb(67, 67, 67);
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 20px;
 }
 @media (min-width: 391px) {
   main .menu-container .container button {
     width: 40%;
+    padding: 8px 20px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(67, 67, 67);
+    border: none;
+    font-weight: 700;
+    border-radius: 20px;
   }
 }/*# sourceMappingURL=menu.css.map */

@@ -1,5 +1,5 @@
-@import "menumixins.scss";
-@import "menuvaribles.scss";
+@import "../mixins";
+@import "../variables";
 
 body{
     margin: 0%;
@@ -55,10 +55,11 @@ main{
             }
 
             button{
-                @include button();
+                @include button-mobile;
 
                 @media (min-width:391px){
                     width: 40%;
+                    @include button-desktop;
                  }
             }
         }
