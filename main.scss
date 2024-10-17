@@ -1,0 +1,9 @@
+@import "variables.scss";
+@import "firstpage.scss";
+@import "mixins.scss";
+
+body{
+
+    margin: 0%;
+    font-family: $primaryFont;
+}
