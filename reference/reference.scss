@@ -6,24 +6,51 @@ body{
     font-family: $primaryFont;
 }
 
+body{
+    margin: 0%;
+    font-family: $primaryFont;
+}
+
 main{
-    height: 100vh;
-    background-color: red;
+    background:white;
+    height: 100%;
     @include flex(column,flex-start,center);
 
-    .outer-container{
-        width: 80%;
-        background-color: blue;
-        @include margin(1rem, 0,0,0);
-        @include flex(row,space-around,center);
-    
-        .betyg-container{
-            background: pink;
-            @include flex(column,space-evenly,flex-start);
+    .betyg-container{
+        width: 90%;
+        @include margin(20px);
+        @include flex(row,center,center);
 
-            .name-pic-container{
-                @include flex(row,space-evenly,center);
+        @media (min-width:391px){
+            width: 40%;
+         }
+      
+        
+        .container{
+            @include flex(column,space-between,space-evenly);
+            width: 80%;
+            @include margin(0,0,0,1rem);
+            @include border(4px,dotted,$primaryColor);
+            background-color: $secondaryColor;
+
+
+            #specialfont{
+             font-family: $menuspecialfont;
+             color: $primaryColor;
             }
+
+            .menu-container {
+                @include flex(row,space-between);
+            }
+
+            .person{
+                @include flex(row,flex-end,flex-end);
+            }
+
+           
+
+            
         }
+
     }
 }
