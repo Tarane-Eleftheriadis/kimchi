@@ -1,0 +1,29 @@
+@import "../mixins";
+@import "../variables";
+
+body{
+    margin: 0%;
+    font-family: $primaryFont;
+}
+
+main{
+    height: 100vh;
+    background-color: red;
+    @include flex(column,flex-start,center);
+
+    .outer-container{
+        width: 80%;
+        background-color: blue;
+        @include margin(1rem, 0,0,0);
+        @include flex(row,space-around,center);
+    
+        .betyg-container{
+            background: pink;
+            @include flex(column,space-evenly,flex-start);
+
+            .name-pic-container{
+                @include flex(row,space-evenly,center);
+            }
+        }
+    }
+}
