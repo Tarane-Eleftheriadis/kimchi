@@ -1,17 +1,19 @@
-@import "../variables";
+@import "../variables.scss";
 
 body{
-    background: rgb(245,245,131);
-    background: linear-gradient(4deg, rgba(245,245,131,1) 0%, rgba(233,108,247,1) 100%);
+    margin: 0;
     
 }
 .styleBox{
     display: flex;
     flex-direction: column;
     font-family: $primaryFont;
+    
 
     .contact{
         color: rgb(255, 243, 7);
+        text-align: center;
+        margin-top: 35px;
     }
     
     .second, .info{
@@ -19,42 +21,93 @@ body{
         margin: 20px;
     }
 }
+
 .box{
-    border: 2px solid white;
+    background-color: #e0e0e0;
+
 }
 
-    .formContact{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
 
-        .namn, .mail{
-            width: 100vh;
-            height: 100vhx;
-            margin: 10px;
+.formContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    .namn, .mail {
+        width: 600px;
+        height: 60px;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid white;
+        background: local;
+    }
+
+    .boxMessage {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin-top: 20px;
+
+        textarea {
+            width: 600px;   
+            height: 35px;   
+            margin-right: 20px; 
             padding: 10px;
             border: 2px solid white;
-            
         }
-        .message{
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            background:none;
-            
+
+        input[type="submit"] {
+            font-size: 16px;
+            color: black;
+            padding: 15px;
+            width: 150px; 
+            border: 2px solid white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($primaryColor, 5%); 
+            }
         }
     }
 
-    .google-map {
-        padding-bottom: 70%;
-        position: relative;
-   }
-   
-   .google-map iframe {
-        height: 50%;
-        width: 50%;
-        left: 0;
-        top: 20px;
-        position: absolute;
-   }
+    &::placeholder {
+        color: black;
+        font-size: medium;
+    }
+    }
+    .google-map{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+        margin: 25px;
+        iframe{
+            width: 600px;
+            height: 300px;
+            border: none;
+        }
+    }
+
+
+
+@media (min-width: 768px) {
+    .formContact {
+        flex-direction: row;
+        .message {
+            flex-direction: row;
+        }
+    }
+} 
+
+@media (min-width: 1024px) {
+    .formContact {
+        .namn, .mail {
+            width: 600px;
+        }
+        .message textarea {
+            width: 600px;
+        }
+    }
+} 
+

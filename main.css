@@ -96,8 +96,7 @@ footer .footerInfo {
 }
 
 body {
-  background: rgb(245, 245, 131);
-  background: linear-gradient(4deg, rgb(245, 245, 131) 0%, rgb(233, 108, 247) 100%);
+  margin: 0;
 }
 
 .styleBox {
@@ -107,6 +106,8 @@ body {
 }
 .styleBox .contact {
   color: rgb(255, 243, 7);
+  text-align: center;
+  margin-top: 35px;
 }
 .styleBox .second, .styleBox .info {
   text-align: center;
@@ -114,7 +115,7 @@ body {
 }
 
 .box {
-  border: 2px solid white;
+  background-color: #e0e0e0;
 }
 
 .formContact {
@@ -124,32 +125,75 @@ body {
   align-self: center;
 }
 .formContact .namn, .formContact .mail {
-  width: 100vh;
-  height: 100vhx;
+  width: 600px;
+  height: 60px;
   margin: 10px;
   padding: 10px;
   border: 2px solid white;
+  background: local;
 }
 .formContact .message {
   display: flex;
   justify-content: center;
-  align-self: center;
-  background: none;
+  align-items: center;
+  margin-top: 20px;
+}
+.formContact .message textarea {
+  width: 600px;
+  height: 35px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 2px solid white;
+}
+.formContact .message input[type=submit] {
+  font-size: 16px;
+  color: black;
+  padding: 15px;
+  width: 150px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.formContact .message input[type=submit]:hover {
+  background-color: #ee4f8f;
+}
+.formContact::-moz-placeholder {
+  color: black;
+  font-size: medium;
+}
+.formContact::placeholder {
+  color: black;
+  font-size: medium;
 }
 
 .google-map {
-  padding-bottom: 70%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  margin: 25px;
 }
-
 .google-map iframe {
-  height: 50%;
-  width: 50%;
-  left: 0;
-  top: 20px;
-  position: absolute;
+  width: 600px;
+  height: 300px;
+  border: none;
 }
 
+@media (min-width: 768px) {
+  .formContact {
+    flex-direction: row;
+  }
+  .formContact .message {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .formContact .namn, .formContact .mail {
+    width: 600px;
+  }
+  .formContact .message textarea {
+    width: 600px;
+  }
+}
 body {
   margin: 0%;
   font-family: "Montserrat", sans-serif;
