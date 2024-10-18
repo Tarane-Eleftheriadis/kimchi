@@ -12,42 +12,59 @@ body{
 }
 
 main{
-    background:white;
+    background: $thirdColor;
     height: 100%;
     @include flex(column,flex-start,center);
 
     .betyg-container{
         width: 90%;
         @include margin(20px);
-        @include flex(row,center,center);
+        @include flex(row,center,flex-start);
 
         @media (min-width:391px){
             width: 40%;
          }
-      
+
+        .img-kimchi{
+            width: 90%;
+            height: 60%;
         
+
+            @media (min-width:391px){
+                width: 100%;
+             }
+        }
+
+        .img-star{
+            width: 100%;
+
+            @media (min-width:391px){
+                width: 60%;
+             }
+        }
+        .img-person{
+            @include margin(1rem,1rem,0,1rem);
+        }
         .container{
-            @include flex(column,space-between,space-evenly);
+            @include flex(column,space-evenly,center);
             width: 80%;
-            @include margin(0,0,0,1rem);
-            @include border(4px,dotted,$primaryColor);
+
+            
             background-color: $secondaryColor;
-
-
-            #specialfont{
-             font-family: $menuspecialfont;
-             color: $primaryColor;
-            }
-
-            .menu-container {
-                @include flex(row,space-between);
-            }
+            @include margin(0,0,0,1rem);
 
             .person{
-                @include flex(row,flex-end,flex-end);
+                @include flex(row,space-evenly,center);
+                
+
+                .name-container{
+                    @include flex(column,space-evenly,flex-start);
+                }
             }
 
-           
+            .comment{
+                text-align: center;
+            }
 
             
         }
