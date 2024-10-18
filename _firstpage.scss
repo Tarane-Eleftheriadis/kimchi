@@ -15,10 +15,15 @@ header{
     .topnav{
         a{
             display: flex;
+            justify-content: center;
             color: $primaryFontColor;
             margin: 5% 0;
             text-decoration: none;
             font-weight: 700;
+
+            .topnav-home-icon{
+                width: 50%;
+            }
 
             @media (min-width: 391px){
                 margin: 2% 0;
@@ -27,16 +32,13 @@ header{
         }
 
         a:hover {
-            text-decoration: underline;
-
-            @media (min-width: 391px){
-                text-decoration: underline;
-            }
+          color: $primaryColor;
         }
 
         .topnav-links{
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
 
             @media (min-width: 391px){
                 background: $secondaryColor;
