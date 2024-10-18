@@ -39,6 +39,9 @@ main .betyg-container .img-kimchi {
 @media (min-width: 391px) {
   main .betyg-container .img-kimchi {
     width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 main .betyg-container .img-star {
