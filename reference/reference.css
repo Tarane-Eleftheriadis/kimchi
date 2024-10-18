@@ -58,7 +58,26 @@ main .betyg-container .img-person {
   margin-left: 0;
   margin-right: 1rem;
 }
-main .betyg-container .container {
+@media (min-width: 391px) {
+  main .betyg-container {
+    width: 100%;
+  }
+}
+main .img-star {
+  width: 100%;
+}
+@media (min-width: 391px) {
+  main .img-star {
+    width: 60%;
+  }
+}
+main .img-person {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+main .container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -70,18 +89,18 @@ main .betyg-container .container {
   margin-left: 0;
   margin-right: 1rem;
 }
-main .betyg-container .container .person {
+main .container .person {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-main .betyg-container .container .person .name-container {
+main .container .person .name-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-main .betyg-container .container .comment {
+main .container .comment {
   text-align: center;
 }/*# sourceMappingURL=reference.css.map */
