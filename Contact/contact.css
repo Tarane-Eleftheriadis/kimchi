@@ -75,12 +75,16 @@
 }
 .contactFormSection .contactForm .submitButton {
   padding: 15px 40px;
-  font-size: 15px;
+  font-size: 1rem;
   color: white;
   background-color: rgb(67, 67, 67);
   border: none;
   font-weight: 700;
   border-radius: 20px;
+  width: 50vw;
+}
+.contactFormSection .contactForm .submitButton:hover {
+  background-color: #F0669E;
 }
 .contactFormSection .contactForm .submitButton:hover, .contactFormSection .contactForm .submitButton:focus {
   background-color: #eb3881;
