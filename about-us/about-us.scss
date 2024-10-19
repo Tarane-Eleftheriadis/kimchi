@@ -1,0 +1,68 @@
+@import "../mixins";
+@import "../variables";
+@import "../firstpage";
+
+body{
+    margin: 0;
+    font-family: $primaryFont;
+}
+
+main{
+
+
+
+    div.aboutus-container{
+        background:$secondaryColor ;
+        margin: 5%;
+        text-align: center;
+        padding: 2%;
+
+        h3{
+            font-style: italic;
+        }
+    }
+    div.aboutus-employees-container-up{
+        background: $secondaryColor;
+        display: flex;
+        padding: 2%;
+        margin: 5% 5% 0 5%;
+
+        .aboutus-employees-img-text{
+         text-align: center;
+         padding: 0% 1% 0% 1%;
+         
+         .title{
+            font-weight: bold;
+         }
+        }
+
+        img.employees-img{
+            width: 50%;
+            border-radius: 50%;
+        }
+    }
+
+    div.aboutus-employees-container-down{
+        background: $secondaryColor;
+        display: flex;
+        padding: 2%;
+        margin: 0 5% 5% 5%;
+
+        .aboutus-employees-img-text{
+            text-align: center;
+            padding: 0% 1% 0% 1%;
+
+            .title{
+                font-weight: bold;
+             }
+           }
+   
+           img.employees-img{
+               width: 50%;
+               border-radius: 50%;
+           }
+    }
+
+
+  
+}
