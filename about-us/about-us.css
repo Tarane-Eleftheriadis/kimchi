@@ -214,11 +214,23 @@ main div.aboutus-container {
 main div.aboutus-container h3 {
   font-style: italic;
 }
+@media (min-width: 391px) {
+  main div.aboutus-container {
+    background: #ffffff;
+    width: 60vw;
+  }
+}
 main div.aboutus-employees-container-up {
   background: #f4f4f4;
   display: flex;
   padding: 2%;
   margin: 5% 5% 0 5%;
+}
+@media (min-width: 391px) {
+  main div.aboutus-employees-container-up {
+    background: #ffffff;
+    width: 60vw;
+  }
 }
 main div.aboutus-employees-container-up .aboutus-employees-img-text {
   text-align: center;
@@ -228,14 +240,25 @@ main div.aboutus-employees-container-up .aboutus-employees-img-text .title {
   font-weight: bold;
 }
 main div.aboutus-employees-container-up img.employees-img {
-  width: 50%;
+  width: 20vw;
   border-radius: 50%;
+}
+@media (min-width: 391px) {
+  main div.aboutus-employees-container-up img.employees-img {
+    width: 10vw;
+  }
 }
 main div.aboutus-employees-container-down {
   background: #f4f4f4;
   display: flex;
   padding: 2%;
   margin: 0 5% 5% 5%;
+}
+@media (min-width: 391px) {
+  main div.aboutus-employees-container-down {
+    background: #ffffff;
+    width: 60vw;
+  }
 }
 main div.aboutus-employees-container-down .aboutus-employees-img-text {
   text-align: center;
@@ -245,6 +268,11 @@ main div.aboutus-employees-container-down .aboutus-employees-img-text .title {
   font-weight: bold;
 }
 main div.aboutus-employees-container-down img.employees-img {
-  width: 50%;
+  width: 20vw;
   border-radius: 50%;
+}
+@media (min-width: 391px) {
+  main div.aboutus-employees-container-down img.employees-img {
+    width: 10vw;
+  }
 }/*# sourceMappingURL=about-us.css.map */

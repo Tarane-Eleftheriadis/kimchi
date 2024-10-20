@@ -20,12 +20,22 @@ main{
         h3{
             font-style: italic;
         }
+
+        @media (min-width: 391px) {
+            background: $thirdColor;   
+            width: 60vw;         
+        }
     }
     div.aboutus-employees-container-up{
         background: $secondaryColor;
         display: flex;
         padding: 2%;
         margin: 5% 5% 0 5%;
+
+        @media (min-width: 391px) {
+            background: $thirdColor; 
+            width: 60vw;           
+        }
 
         .aboutus-employees-img-text{
          text-align: center;
@@ -37,8 +47,12 @@ main{
         }
 
         img.employees-img{
-            width: 50%;
+            width: 20vw;
             border-radius: 50%;
+
+            @media (min-width: 391px) {
+                width: 10vw;            
+            }
         }
     }
 
@@ -47,6 +61,11 @@ main{
         display: flex;
         padding: 2%;
         margin: 0 5% 5% 5%;
+
+        @media (min-width: 391px) {
+            background: $thirdColor;  
+            width: 60vw;          
+        }
 
         .aboutus-employees-img-text{
             text-align: center;
@@ -58,8 +77,12 @@ main{
            }
    
            img.employees-img{
-               width: 50%;
+               width: 20vw;
                border-radius: 50%;
+
+               @media (min-width: 391px) {
+                width: 10vw;            
+            }
            }
     }
 
