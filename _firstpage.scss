@@ -15,30 +15,30 @@ header{
     .topnav{
         a{
             display: flex;
+            justify-content: center;
             color: $primaryFontColor;
             margin: 5% 0;
             text-decoration: none;
-            font-size: 1.5rem;
             font-weight: 700;
 
+            .topnav-home-icon{
+                width: 50%;
+            }
+
             @media (min-width: 391px){
-                font-size: 0.8rem;
                 margin: 2% 0;
             }
             
         }
 
         a:hover {
-            text-decoration: underline;
-
-            @media (min-width: 391px){
-                text-decoration: underline;
-            }
+          color: $primaryColor;
         }
 
         .topnav-links{
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
 
             @media (min-width: 391px){
                 background: $secondaryColor;
@@ -47,7 +47,7 @@ header{
     }
 
     .header-logga-img{
-        height: 110%;
+        height: 75%;
 
     }
 }
@@ -76,22 +76,12 @@ div.firstpage-welcome-box{
         margin-bottom: 1%;
     }
 
-    h1.firstpage-welcome-box-h1{
-        font-size: 1.5rem;
 
-        @media (min-width:391px){
-            font-size: 1.5rem;
-        }
-    }
-
-    h2.firstpage-welcome-box-h2{
-        font-size: 1.2rem;
-        font-weight: 400;
+    p.firstpage-welcome-box-p{
         line-height: 1.4;
         padding: 0 2% 5% 2%;
 
         @media (min-width:391px){
-            font-size: 0.6rem;
             padding: 0 5% 3% 5%;
         }
     }
@@ -136,21 +126,9 @@ div.firstpage-openinghours-contact-container{
             margin: 2% 2% 2% 0%;
         }
 
-        .firstpage-openinghours-h2{
-            font-size: 1.2rem;
-            
-            @media (min-width:391px){
-                font-size: 1rem;
-            }
-        }
         
         p.firstpage-openinghours-p{
-            font-size: 1.2rem;
             line-height: 0.8;
-
-            @media (min-width:391px){
-            font-size: 0.6rem;
-            }
         }
     }
 
@@ -166,21 +144,8 @@ div.firstpage-openinghours-contact-container{
             margin: 2% 0% 2% 2%;
         }
 
-        h2.firstpage-contactinfo-h2{
-            font-size: 1.2rem;
-            
-            @media (min-width:391px){
-                font-size: 1rem;
-            }
-        }
-
         p.firstpage-contactinfo-p{
-            font-size: 1.2rem;
             line-height: 0.8;
-
-            @media (min-width:391px){
-                font-size: 0.6rem;
-            }
         }
         
         
@@ -194,9 +159,6 @@ footer{
     background: $primaryColor;
     width: 100vw;
 
-    @media (min-width:391px){
-        height: 40vh;
-     }
 
     .footer-logga-img{
         width: 40%;
@@ -213,7 +175,7 @@ footer{
 
             @media (min-width:391px){
                 color: $secondaryFontColor;
-                font-size: 0.5rem;
+                font-size: 0.7rem;
                 line-height: 0.5;
              }
     }
@@ -225,12 +187,12 @@ footer{
 
             @media (min-width:391px){
                 color: $secondaryFontColor;
-                font-size: 0.4rem;
-                line-height: 0;
+                font-size: 0.6rem;
              }
     }
+ 
     hr{
-        border: 0.001rem solid white;
+        border: 0.001rem solid $secondaryColor;
         width: 40%;
     }
 
