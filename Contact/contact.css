@@ -12,10 +12,14 @@
 
 .contactBody {
   font-family: "Montserrat", sans-serif;
-  background: rgb(245, 245, 131) linear-gradient(176deg, rgb(245, 245, 131) 0%, rgb(233, 108, 247) 100%);
-  color: black;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 391px) {
+  .contactBody {
+    background-color: #f4f4f4;
+  }
 }
 
 .contactMain {
@@ -23,6 +27,12 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+@media (min-width: 391px) {
+  .contactMain {
+    background-color: #ffffff;
+    margin-bottom: 1%;
+  }
 }
 
 .contactUs {
@@ -36,6 +46,8 @@
 }
 
 .contactIntroduction {
+  background-color: #f4f4f4;
+  width: 90vw;
   max-width: 600px;
   text-align: center;
   margin-bottom: 30px;
@@ -72,6 +84,19 @@
   font-size: 1rem;
   background-color: #f4f4f4;
   color: black;
+  color: black;
+}
+.contactFormSection .contactForm .formGroup input::-moz-placeholder, .contactFormSection .contactForm .formGroup select::-moz-placeholder, .contactFormSection .contactForm .formGroup textarea::-moz-placeholder {
+  color: black;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.contactFormSection .contactForm .formGroup input::placeholder,
+.contactFormSection .contactForm .formGroup select::placeholder,
+.contactFormSection .contactForm .formGroup textarea::placeholder {
+  color: black;
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
 .contactFormSection .contactForm .submitButton {
   padding: 15px 40px;
@@ -91,6 +116,7 @@
   max-width: 600px;
   margin-bottom: 30px;
   text-align: center;
+  background-color: #f4f4f4;
 }
 .contactInfo h2 {
   font-size: 1.5rem;
@@ -112,6 +138,41 @@
   text-decoration: underline;
 }
 
+@media (min-width: 391px) {
+  .contactInfo {
+    width: 60vw;
+    background-color: #f4f4f4;
+    margin-bottom: 1%;
+  }
+}
+
+.catchphrase {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.catchphrase h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.catchphrase p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.imageKimChi {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.imageKimChi img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 .googleMap {
   width: 100%;
   max-width: 600px;
@@ -125,13 +186,63 @@
 }
 
 .additionalInfo {
-  max-width: 800px;
+  max-width: 600px;
+  background-color: #f4f4f4;
   text-align: center;
   padding: 0 10px;
 }
 .additionalInfo p {
   font-size: 1rem;
   line-height: 1.6;
+}
+@media (min-width: 391px) {
+  .additionalInfo {
+    width: 60vw;
+    background-color: #f4f4f4;
+    margin-bottom: 1%;
+  }
+}
+
+.contactHours {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 391px) {
+  .contactHours {
+    flex-direction: row;
+  }
+}
+.contactHours .openinghours {
+  width: 90vw;
+  max-width: 600px;
+  margin: 20px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+@media (min-width: 391px) {
+  .contactHours .openinghours {
+    width: 60vw;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    margin: 2% 2% 2% 0%;
+  }
+}
+.contactHours .openinghours .openinghoursH2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 391px) {
+  .contactHours .openinghours .openinghoursH2 {
+    font-size: 1.5rem;
+  }
+}
+.contactHours .openinghours p.openinghoursP {
+  font-size: 1.5rem;
+  line-height: 0.8;
+}
+@media (min-width: 391px) {
+  .contactHours .openinghours p.openinghoursP {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
