@@ -199,6 +199,10 @@ footer hr {
   border: 0.001rem solid #f4f4f4;
   width: 40%;
 }
+footer .footer-nav a {
+  text-decoration: none;
+  color: white;
+}
 
 body {
   margin: 0%;
