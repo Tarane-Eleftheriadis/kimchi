@@ -10,11 +10,11 @@ body{
 
 main{
    
-    div.aboutus-container{
-        background:$secondaryColor ;
-        margin: 5%;
+    article.aboutus-container{
+        background:$secondaryColor;
         text-align: center;
         padding: 2%;
+        margin: 5%;
 
         h3{
             font-style: italic;
@@ -22,23 +22,24 @@ main{
 
         @media (min-width: 391px) {
             background: $thirdColor;   
-            width: 60vw;         
+            width: 60vw;   
+            margin: 0;      
         }
     }
+
     div.aboutus-employees-container-up{
         background: $secondaryColor;
         display: flex;
-        padding: 2%;
-        margin: 5% 5% 0 5%;
 
         @media (min-width: 391px) {
             background: $thirdColor; 
-            width: 60vw;           
+            width: 60vw;         
+            margin: 0;  
         }
 
         .aboutus-employees-img-text{
          text-align: center;
-         padding: 0% 1% 0% 1%;
+         width: 33%;
          
          .title{
             font-weight: bold;
@@ -50,7 +51,7 @@ main{
             border-radius: 50%;
 
             @media (min-width: 391px) {
-                width: 10vw;            
+                width: 7vw;            
             }
         }
     }
@@ -58,17 +59,15 @@ main{
     div.aboutus-employees-container-down{
         background: $secondaryColor;
         display: flex;
-        padding: 2%;
-        margin: 0 5% 5% 5%;
 
         @media (min-width: 391px) {
             background: $thirdColor;  
-            width: 60vw;          
+            width: 60vw;         
         }
 
         .aboutus-employees-img-text{
             text-align: center;
-            padding: 0% 1% 0% 1%;
+            width: 33%;
 
             .title{
                 font-weight: bold;
@@ -80,7 +79,7 @@ main{
                border-radius: 50%;
 
                @media (min-width: 391px) {
-                width: 10vw;            
+                width: 7vw;            
             }
            }
     }
