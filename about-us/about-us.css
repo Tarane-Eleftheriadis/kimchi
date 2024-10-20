@@ -202,6 +202,7 @@ footer hr {
 
 body {
   margin: 0;
+  width: 100vw;
   font-family: "Montserrat", sans-serif;
 }
 
