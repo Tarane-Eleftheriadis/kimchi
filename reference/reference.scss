@@ -15,16 +15,31 @@ main{
         background: $secondaryColor;
     }
 
+    .first-betyg-container{
+        width: 90vw;
+        background-color: $secondaryColor;
+        @include margin(0.9rem,0.9rem);
+        @include flex(column,center,center);
+            p{
+            padding: 2%;
+            text-align: center;
+            }
+
+        @media (min-width:391px){
+            width: 60vw;
+            background: $thirdColor;
+         }
+    }
 
     .betyg-container{
-        width: 90%;
+        width: 90vw;
         background-color: $secondaryColor;
         @include margin(0.9rem,0.9rem);
         @include flex(row,center,flex-start);
        
 
         @media (min-width:391px){
-            width: 40%;
+            width: 60vw;
             background: $thirdColor;
          }
 
