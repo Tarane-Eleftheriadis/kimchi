@@ -1,0 +1,97 @@
+@import "../mixins";
+@import "../variables";
+@import "../firstpage";
+
+body{
+    margin: 0;
+    width: 100vw;
+    font-family: $primaryFont;
+}
+
+main{
+   
+    article.aboutus-container{
+        background:$secondaryColor;
+        text-align: center;
+        margin: 5%;
+
+        p{
+            padding: 2%;
+        }
+
+        h3{
+            font-style: italic;
+        }
+
+        @media (min-width: 391px) {
+            background: $thirdColor;   
+            width: 60vw;   
+            margin: 0;      
+        }
+    }
+
+    article.aboutus-employees-box{
+        margin: 0 5% 5% 5%;
+
+    .aboutus-employees-container-up{
+        background: $secondaryColor;
+        display: flex;
+
+        @media (min-width: 391px) {
+            background: $thirdColor; 
+            width: 60vw;         
+            margin: 0;  
+        }
+
+        .aboutus-employees-img-text{
+         text-align: center;
+         width: 33%;
+         padding: 2%;
+         
+         .title{
+            font-weight: bold;
+         }
+        }
+
+        img.employees-img{
+            width: 20vw;
+            border-radius: 50%;
+
+            @media (min-width: 391px) {
+                width: 7vw;            
+            }
+        }
+    }
+
+    div.aboutus-employees-container-down{
+        background: $secondaryColor;
+        display: flex;
+
+        @media (min-width: 391px) {
+            background: $thirdColor;  
+            width: 60vw;         
+        }
+
+        .aboutus-employees-img-text{
+            text-align: center;
+            width: 33%;
+            padding: 2%;
+
+            .title{
+                font-weight: bold;
+             }
+           }
+   
+           img.employees-img{
+               width: 20vw;
+               border-radius: 50%;
+
+               @media (min-width: 391px) {
+                width: 7vw;            
+            }
+           }
+    }
+
+    }
+  
+}
