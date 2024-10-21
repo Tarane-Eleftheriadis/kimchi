@@ -225,8 +225,30 @@ main {
     background: #f4f4f4;
   }
 }
+main .first-betyg-container {
+  width: 90vw;
+  background-color: #f4f4f4;
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+  margin-left: 1px;
+  margin-right: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .first-betyg-container p {
+  padding: 2%;
+  text-align: center;
+}
+@media (min-width: 391px) {
+  main .first-betyg-container {
+    width: 60vw;
+    background: #ffffff;
+  }
+}
 main .betyg-container {
-  width: 90%;
+  width: 90vw;
   background-color: #f4f4f4;
   margin-top: 0.9rem;
   margin-bottom: 0.9rem;
@@ -239,7 +261,7 @@ main .betyg-container {
 }
 @media (min-width: 391px) {
   main .betyg-container {
-    width: 40%;
+    width: 60vw;
     background: #ffffff;
   }
 }

@@ -232,7 +232,7 @@ main #second-container {
   border: 5px, double, #F0669E;
 }
 main .menu-container {
-  width: 90%;
+  width: 90vw;
   background: #f4f4f4;
   margin-top: 0.9rem;
   margin-bottom: 0.9rem;
@@ -245,7 +245,7 @@ main .menu-container {
 }
 @media (min-width: 391px) {
   main .menu-container {
-    width: 40%;
+    width: 60vw;
     background: #ffffff;
   }
 }
