@@ -26,13 +26,13 @@ main{
 
 
     .menu-container{
-        width: 90%;
+        width: 90vw;
         background: $secondaryColor;
         @include margin(0.9rem,0.9rem);
         @include flex(row,space-between,center);
 
         @media (min-width:391px){
-            width: 40%;
+            width: 60vw;
             background: $thirdColor;
          }
       
