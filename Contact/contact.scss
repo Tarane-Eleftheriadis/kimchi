@@ -17,12 +17,14 @@
 
 .contactBody {
     font-family: $primaryFont;
-    background-color: $thirdColor;
+    background:$thirdColor;
     margin: 0;
     padding: 0;
 
     @media (min-width:391px){
-        background-color: $secondaryColor;
+        background: $secondaryColor; 
+        width: 60wv;
+        margin: 0;
      }
 }
 
@@ -31,29 +33,29 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    
 
     @media (min-width:391px){
-        background-color: $thirdColor;
+        background:$secondaryColor;
         margin-bottom: 1%;
     }
 }
 
-.contactUs {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-
-    h1 {
-        font-size: 2rem;
-        color: $primaryFontColor;
-        $secondaryFont: "Arial", sans-serif;
-    }
-}
 
 .contactIntroduction {
     background-color: $secondaryColor;
-    width: 90vw;
-    max-width: 600px;
+    width: 60;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    @media (min-width:391px){
+        background: $thirdColor;
+        width: 60vw;
+        margin-bottom: 1%;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+    }
+    
     text-align: center;
     margin-bottom: 30px;
 
@@ -71,28 +73,34 @@
 .contactFormSection {
     width: 100%;
     max-width: 600px;
-    margin-bottom: 30px;
+    background: $secondaryColor;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    @media (min-width:391px){
+        background: $thirdColor;
+        max-width: 60vw;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+    }
 
     .contactForm {
         display: flex;
         flex-direction: column;
-
+        margin-top: 10px;
 
         .formGroup {
             display: flex;
             flex-direction: column;
             margin-bottom: 15px;
+            margin: 2%;
 
             input,
             select,
             textarea {
                 padding: 10px;
-                border: 2px solid blueviolet;
-                border-radius: 5px;
-                font-size: 1rem;
-                
-                background-color: $secondaryColor;
-                color: black;
+                font-size: 1rem;    
+                color: rgb(140, 140, 140);
                 color: $primaryFontColor;
 
                 &::placeholder {
@@ -105,11 +113,13 @@
         }
 
         .submitButton {
-            @include button-mobile;
+            align-self: flex-end;
+            margin: 5%;
 
-            &:hover,
-            &:focus {
-                background-color: darken($primaryColor, 10%);
+            @include button-mobile();
+
+            @media (min-width:391px){
+                @include button-desktop();
             }
         }
     }
@@ -121,59 +131,18 @@
     margin-bottom: 30px;
     text-align: center;
     background-color: $secondaryColor;
+    margin: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-            font-size: 1rem;
-            margin-bottom: 5px;
-
-            a {
-                color: blueviolet;
-                text-decoration: none;
-
-                &:hover,
-                &:focus {
-                    text-decoration: underline;
-                }
-            }
-        }
+    @media (min-width: 391px) {
+        max-width: 60vw;
+        background-color: $thirdColor;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
     }
 }
 
-.contactInfo{
-    @media (min-width:391px){
-        width: 60vw;
-        background-color: $secondaryColor;
-        margin-bottom: 1%;
-    }
-
-}
-
-.catchphrase{
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 30px;
-    text-align: center;
-    background-color: $secondaryColor;
-
-    h2{
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    p{
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-}
 
 .imageKimChi{
     width: 100%;
@@ -183,7 +152,7 @@
     img{
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 50%;
     }
 }
 
@@ -205,60 +174,23 @@
     background-color: $secondaryColor;
     text-align: center;
     padding: 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     p {
         font-size: 1rem;
         line-height: 1.6;
     }
     @media (min-width:391px){
-        width: 60vw;
-        background-color: $secondaryColor;
+        max-width: 60vw;
+        background-color: $thirdColor;
         margin-bottom: 1%;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
     }
 }
 
-.contactHours{
-    display: flex;
-    flex-direction: column;
 
-    @media (min-width:391px){
-        flex-direction: row;
-        
-    }
-
-    .openinghours{
-        width: 90vw;
-        max-width: 600px;
-        margin: 20px 0;
-        background: $secondaryColor;
-        text-align: center;
-        
-
-        @media (min-width:391px){
-            width: 60vw;
-            max-width: 600px;
-            background-color: $secondaryColor;
-            margin: 2% 2% 2% 0%;
-        }
-
-        .openinghoursH2{
-            font-size: 1.5rem;
-            
-            @media (min-width:391px){
-                font-size: 1.5rem;
-            }
-        }
-        
-        p.openinghoursP{
-            font-size: 1.5rem;
-            line-height: 0.8;
-
-            @media (min-width:391px){
-            font-size: 1rem;
-            }
-        }
-    }
-}
 @media (min-width: 768px) {
     .contactMain {
         padding: 40px;

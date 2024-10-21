@@ -22,6 +22,9 @@ header .topnav a .topnav-home-icon {
     margin: 2% 0;
   }
 }
+header .topnav .highlight {
+  color: #F0669E;
+}
 header .topnav a:hover {
   color: #F0669E;
 }
@@ -199,6 +202,10 @@ footer hr {
   border: 0.001rem solid #f4f4f4;
   width: 40%;
 }
+footer .footer-nav a {
+  text-decoration: none;
+  color: white;
+}
 
 .visually-hidden {
   position: absolute;
@@ -214,13 +221,15 @@ footer hr {
 
 .contactBody {
   font-family: "Montserrat", sans-serif;
-  background-color: #ffffff;
+  background: #ffffff;
   margin: 0;
   padding: 0;
 }
 @media (min-width: 391px) {
   .contactBody {
-    background-color: #f4f4f4;
+    background: #f4f4f4;
+    width: 60wv;
+    margin: 0;
   }
 }
 
@@ -232,27 +241,27 @@ footer hr {
 }
 @media (min-width: 391px) {
   .contactMain {
-    background-color: #ffffff;
+    background: #f4f4f4;
     margin-bottom: 1%;
   }
 }
 
-.contactUs {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.contactUs h1 {
-  font-size: 2rem;
-  color: black;
-}
-
 .contactIntroduction {
   background-color: #f4f4f4;
-  width: 90vw;
-  max-width: 600px;
+  width: 60;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   margin-bottom: 30px;
+}
+@media (min-width: 391px) {
+  .contactIntroduction {
+    background: #ffffff;
+    width: 60vw;
+    margin-bottom: 1%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+  }
 }
 .contactIntroduction h2 {
   font-size: 1.5rem;
@@ -266,26 +275,35 @@ footer hr {
 .contactFormSection {
   width: 100%;
   max-width: 600px;
-  margin-bottom: 30px;
+  background: #f4f4f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (min-width: 391px) {
+  .contactFormSection {
+    background: #ffffff;
+    max-width: 60vw;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+  }
 }
 .contactFormSection .contactForm {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 .contactFormSection .contactForm .formGroup {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  margin: 2%;
 }
 .contactFormSection .contactForm .formGroup input,
 .contactFormSection .contactForm .formGroup select,
 .contactFormSection .contactForm .formGroup textarea {
   padding: 10px;
-  border: 2px solid blueviolet;
-  border-radius: 5px;
   font-size: 1rem;
-  background-color: #f4f4f4;
-  color: black;
+  color: rgb(140, 140, 140);
   color: black;
 }
 .contactFormSection .contactForm .formGroup input::-moz-placeholder, .contactFormSection .contactForm .formGroup select::-moz-placeholder, .contactFormSection .contactForm .formGroup textarea::-moz-placeholder {
@@ -301,6 +319,8 @@ footer hr {
   font-family: "Montserrat", sans-serif;
 }
 .contactFormSection .contactForm .submitButton {
+  align-self: flex-end;
+  margin: 5%;
   padding: 15px 40px;
   font-size: 1rem;
   color: white;
@@ -313,8 +333,19 @@ footer hr {
 .contactFormSection .contactForm .submitButton:hover {
   background-color: #F0669E;
 }
-.contactFormSection .contactForm .submitButton:hover, .contactFormSection .contactForm .submitButton:focus {
-  background-color: #eb3881;
+@media (min-width: 391px) {
+  .contactFormSection .contactForm .submitButton {
+    padding: 12px 30px;
+    color: white;
+    background-color: rgb(67, 67, 67);
+    border: none;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 15vw;
+  }
+  .contactFormSection .contactForm .submitButton:hover {
+    background-color: #F0669E;
+  }
 }
 
 .contactInfo {
@@ -323,49 +354,17 @@ footer hr {
   margin-bottom: 30px;
   text-align: center;
   background-color: #f4f4f4;
+  margin: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.contactInfo h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-.contactInfo ul {
-  list-style: none;
-  padding: 0;
-}
-.contactInfo ul li {
-  font-size: 1rem;
-  margin-bottom: 5px;
-}
-.contactInfo ul li a {
-  color: blueviolet;
-  text-decoration: none;
-}
-.contactInfo ul li a:hover, .contactInfo ul li a:focus {
-  text-decoration: underline;
-}
-
 @media (min-width: 391px) {
   .contactInfo {
-    width: 60vw;
-    background-color: #f4f4f4;
-    margin-bottom: 1%;
+    max-width: 60vw;
+    background-color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
   }
-}
-
-.catchphrase {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 30px;
-  text-align: center;
-  background-color: #f4f4f4;
-}
-.catchphrase h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-.catchphrase p {
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 .imageKimChi {
@@ -376,7 +375,7 @@ footer hr {
 .imageKimChi img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 .googleMap {
@@ -396,6 +395,9 @@ footer hr {
   background-color: #f4f4f4;
   text-align: center;
   padding: 0 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .additionalInfo p {
   font-size: 1rem;
@@ -403,51 +405,10 @@ footer hr {
 }
 @media (min-width: 391px) {
   .additionalInfo {
-    width: 60vw;
-    background-color: #f4f4f4;
+    max-width: 60vw;
+    background-color: #ffffff;
     margin-bottom: 1%;
-  }
-}
-
-.contactHours {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 391px) {
-  .contactHours {
-    flex-direction: row;
-  }
-}
-.contactHours .openinghours {
-  width: 90vw;
-  max-width: 600px;
-  margin: 20px 0;
-  background: #f4f4f4;
-  text-align: center;
-}
-@media (min-width: 391px) {
-  .contactHours .openinghours {
-    width: 60vw;
-    max-width: 600px;
-    background-color: #f4f4f4;
-    margin: 2% 2% 2% 0%;
-  }
-}
-.contactHours .openinghours .openinghoursH2 {
-  font-size: 1.5rem;
-}
-@media (min-width: 391px) {
-  .contactHours .openinghours .openinghoursH2 {
-    font-size: 1.5rem;
-  }
-}
-.contactHours .openinghours p.openinghoursP {
-  font-size: 1.5rem;
-  line-height: 0.8;
-}
-@media (min-width: 391px) {
-  .contactHours .openinghours p.openinghoursP {
-    font-size: 1rem;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
   }
 }
 
