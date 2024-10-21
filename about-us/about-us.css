@@ -209,8 +209,10 @@ body {
 main article.aboutus-container {
   background: #f4f4f4;
   text-align: center;
-  padding: 2%;
   margin: 5%;
+}
+main article.aboutus-container p {
+  padding: 2%;
 }
 main article.aboutus-container h3 {
   font-style: italic;
@@ -222,56 +224,61 @@ main article.aboutus-container h3 {
     margin: 0;
   }
 }
-main div.aboutus-employees-container-up {
+main article.aboutus-employees-box {
+  margin: 0 5% 5% 5%;
+}
+main article.aboutus-employees-box .aboutus-employees-container-up {
   background: #f4f4f4;
   display: flex;
 }
 @media (min-width: 391px) {
-  main div.aboutus-employees-container-up {
+  main article.aboutus-employees-box .aboutus-employees-container-up {
     background: #ffffff;
     width: 60vw;
     margin: 0;
   }
 }
-main div.aboutus-employees-container-up .aboutus-employees-img-text {
+main article.aboutus-employees-box .aboutus-employees-container-up .aboutus-employees-img-text {
   text-align: center;
   width: 33%;
+  padding: 2%;
 }
-main div.aboutus-employees-container-up .aboutus-employees-img-text .title {
+main article.aboutus-employees-box .aboutus-employees-container-up .aboutus-employees-img-text .title {
   font-weight: bold;
 }
-main div.aboutus-employees-container-up img.employees-img {
+main article.aboutus-employees-box .aboutus-employees-container-up img.employees-img {
   width: 20vw;
   border-radius: 50%;
 }
 @media (min-width: 391px) {
-  main div.aboutus-employees-container-up img.employees-img {
+  main article.aboutus-employees-box .aboutus-employees-container-up img.employees-img {
     width: 7vw;
   }
 }
-main div.aboutus-employees-container-down {
+main article.aboutus-employees-box div.aboutus-employees-container-down {
   background: #f4f4f4;
   display: flex;
 }
 @media (min-width: 391px) {
-  main div.aboutus-employees-container-down {
+  main article.aboutus-employees-box div.aboutus-employees-container-down {
     background: #ffffff;
     width: 60vw;
   }
 }
-main div.aboutus-employees-container-down .aboutus-employees-img-text {
+main article.aboutus-employees-box div.aboutus-employees-container-down .aboutus-employees-img-text {
   text-align: center;
   width: 33%;
+  padding: 2%;
 }
-main div.aboutus-employees-container-down .aboutus-employees-img-text .title {
+main article.aboutus-employees-box div.aboutus-employees-container-down .aboutus-employees-img-text .title {
   font-weight: bold;
 }
-main div.aboutus-employees-container-down img.employees-img {
+main article.aboutus-employees-box div.aboutus-employees-container-down img.employees-img {
   width: 20vw;
   border-radius: 50%;
 }
 @media (min-width: 391px) {
-  main div.aboutus-employees-container-down img.employees-img {
+  main article.aboutus-employees-box div.aboutus-employees-container-down img.employees-img {
     width: 7vw;
   }
 }/*# sourceMappingURL=about-us.css.map */

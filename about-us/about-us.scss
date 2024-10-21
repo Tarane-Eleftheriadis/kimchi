@@ -13,8 +13,11 @@ main{
     article.aboutus-container{
         background:$secondaryColor;
         text-align: center;
-        padding: 2%;
         margin: 5%;
+
+        p{
+            padding: 2%;
+        }
 
         h3{
             font-style: italic;
@@ -27,7 +30,10 @@ main{
         }
     }
 
-    div.aboutus-employees-container-up{
+    article.aboutus-employees-box{
+        margin: 0 5% 5% 5%;
+
+    .aboutus-employees-container-up{
         background: $secondaryColor;
         display: flex;
 
@@ -40,6 +46,7 @@ main{
         .aboutus-employees-img-text{
          text-align: center;
          width: 33%;
+         padding: 2%;
          
          .title{
             font-weight: bold;
@@ -68,6 +75,7 @@ main{
         .aboutus-employees-img-text{
             text-align: center;
             width: 33%;
+            padding: 2%;
 
             .title{
                 font-weight: bold;
@@ -84,6 +92,6 @@ main{
            }
     }
 
-
+    }
   
 }
