@@ -11,14 +11,21 @@ main{
     background: $thirdColor;
     height: 100%;
     @include flex(column,flex-start,center);
+    @media (min-width:391px){
+        background: $secondaryColor;
+    }
+
 
     .betyg-container{
         width: 90%;
-        @include margin(20px);
+        background-color: $secondaryColor;
+        @include margin(0.9rem,0.9rem);
         @include flex(row,center,flex-start);
+       
 
         @media (min-width:391px){
             width: 40%;
+            background: $thirdColor;
          }
 
         .img-kimchi{
@@ -47,9 +54,6 @@ main{
         .container{
             @include flex(column,space-evenly,center);
             width: 80%;
-
-            
-            background-color: $secondaryColor;
             @include margin(0,0,0,1rem);
 
             .person{

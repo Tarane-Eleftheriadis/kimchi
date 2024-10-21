@@ -1,5 +1,6 @@
 @import "../mixins";
 @import "../variables";
+@import "../firstpage";
 
 body{
     margin: 0;
@@ -7,13 +8,13 @@ body{
 }
 
 main{
-    background-image:$thirdColor;
-    height: 100vh;
+    background:$thirdColor;
 
     @media (min-width:391px){
         display: flex;
         flex-direction: column;
         align-items: center; 
+        background: $secondaryColor;
       }
    
 }
@@ -33,6 +34,7 @@ div.boka-bord-img-text-container{
       width: 50vw;
       margin: 2%;
       padding: 2%;
+      background: $thirdColor;
     }
 
     p{
@@ -58,11 +60,12 @@ form{
     flex-direction: column;
     background: $secondaryColor;
     padding: 3% 3% 15% 3%;
-    margin: 5%;
+    width: 85vw;
+    margin-bottom: 5%;
 
     @media (min-width:391px){
         padding: 2% 2% 5% 2%;
-        margin: 0;
+        background-color: $thirdColor;
         }
 
     input{

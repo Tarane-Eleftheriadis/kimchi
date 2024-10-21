@@ -31,6 +31,10 @@ header{
             
         }
 
+        .highlight{
+            color: $primaryColor;
+        }
+
         a:hover {
           color: $primaryColor;
         }
@@ -194,6 +198,14 @@ footer{
     hr{
         border: 0.001rem solid $secondaryColor;
         width: 40%;
+    }
+
+    .footer-nav{
+
+        a{
+        text-decoration: none;
+        color: $secondaryFontColor;
+        }
     }
 
     }
