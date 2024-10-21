@@ -42,7 +42,7 @@ main{
             width: 80%;
             @include margin(0,0,0,1rem);
 
-            #specialfont{
+            .specialfont{
              font-family: $menuspecialfont;
              color: $primaryColor;
             }
@@ -61,12 +61,25 @@ main{
                 @include flex(row, space-between);
             }
 
+            #special-button{
+                @include button-mobile-special;
+
+                @media (min-width:391px){
+                    width: 40%;
+                    @include button-desktop-special;
+                    
+
+                 }
+            }
+
             button{
                 @include button-mobile;
 
                 @media (min-width:391px){
                     width: 40%;
                     @include button-desktop;
+                    
+
                  }
             }
         }
