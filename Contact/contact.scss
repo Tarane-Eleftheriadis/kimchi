@@ -19,7 +19,6 @@
     font-family: $primaryFont;
     background:$thirdColor;
     margin: 0;
-    padding: 0;
 
     @media (min-width:391px){
         background: $secondaryColor; 
@@ -32,7 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0 1rem;
     
 
     @media (min-width:391px){
@@ -50,13 +49,11 @@
     @media (min-width:391px){
         background: $thirdColor;
         width: 60vw;
-        margin-bottom: 1%;
-
         
     }
     
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 2rem;
 
     h2 {
         font-size: 1.5rem;
@@ -137,7 +134,7 @@
     
     text-align: center;
     background-color: $secondaryColor;
-    margin: 5%;
+    margin: 2rem;
     
 
     @media (min-width: 391px) {
@@ -197,7 +194,7 @@
 
 @media (min-width: 768px) {
     .contactMain {
-        padding: 40px;
+        padding: 0 1rem;
     }
 
     .contactHeader h1 {

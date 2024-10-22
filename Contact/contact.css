@@ -215,7 +215,6 @@ footer .footer-nav a {
   font-family: "Montserrat", sans-serif;
   background: #ffffff;
   margin: 0;
-  padding: 0;
 }
 @media (min-width: 391px) {
   .contactBody {
@@ -229,7 +228,7 @@ footer .footer-nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 0 1rem;
 }
 @media (min-width: 391px) {
   .contactMain {
@@ -241,13 +240,12 @@ footer .footer-nav a {
   background-color: #f4f4f4;
   width: 60;
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 2rem;
 }
 @media (min-width: 391px) {
   .contactIntroduction {
     background: #ffffff;
     width: 60vw;
-    margin-bottom: 1%;
   }
 }
 .contactIntroduction h2 {
@@ -345,7 +343,7 @@ footer .footer-nav a {
   max-width: 600px;
   text-align: center;
   background-color: #f4f4f4;
-  margin: 5%;
+  margin: 2rem;
 }
 @media (min-width: 391px) {
   .contactInfo {
@@ -401,7 +399,7 @@ footer .footer-nav a {
 
 @media (min-width: 768px) {
   .contactMain {
-    padding: 40px;
+    padding: 0 1rem;
   }
   .contactHeader h1 {
     font-size: 2.5rem;
