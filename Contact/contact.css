@@ -420,11 +420,11 @@ footer .footer-nav a {
     font-size: 2.5rem;
   }
   .contactIntroduction h2 {
-    font-size: 2rem;
+    padding: 2%;
   }
   .contactIntroduction p,
   .additionalInfo p {
-    font-size: 1.1rem;
+    padding: 2%;
   }
   .contactFormSection .contactForm .formGroup input,
   .contactFormSection .contactForm .formGroup select,
