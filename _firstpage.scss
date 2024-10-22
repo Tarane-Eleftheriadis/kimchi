@@ -43,6 +43,7 @@ header{
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            margin-bottom: 1rem;
 
             @media (min-width: 391px){
                 background: $secondaryColor;
@@ -62,23 +63,22 @@ main{
     align-items: center;
 
     @media (min-width:391px){
-       background-color: $secondaryColor;
+        background-color: $secondaryColor;
     }
-}
 
-div.firstpage-welcome-box{
-    width: 90vw;
-    height: auto;
-    background-color: $secondaryColor;
-    text-align: center;
-    padding: 20px 0px;
-    margin-bottom: 5%;
 
-    @media (min-width:391px){
-        width: 60vw;
-        background-color: $thirdColor;
-        margin-bottom: 1%;
-    }
+    div.firstpage-welcome-box{
+        width: 90vw;
+        height: auto;
+        background-color: $secondaryColor;
+        text-align: center;
+        padding: 20px 0px;
+        margin-bottom: 2rem;
+
+        @media (min-width:391px){
+            width: 60vw;
+            background-color: $thirdColor;
+        }
 
 
     p.firstpage-welcome-box-p{
@@ -122,12 +122,11 @@ div.firstpage-openinghours-contact-container{
         background: $secondaryColor;
         width: 90vw;
         text-align: center;
-        margin: 20px 0;
+        margin-top: 2rem;
 
         @media (min-width:391px){
             width: 30vw;
             background-color: $thirdColor;
-            margin: 2% 2% 2% 0%;
         }
 
         
@@ -140,12 +139,11 @@ div.firstpage-openinghours-contact-container{
         background: $secondaryColor;
         width: 90vw;
         text-align: center;
-        margin-bottom: 5%;
+        margin-top: 2rem;
 
         @media (min-width:391px){
             width: 30vw;
             background-color: $thirdColor;
-            margin: 2% 0% 2% 2%;
         }
 
         p.firstpage-contactinfo-p{
@@ -155,6 +153,7 @@ div.firstpage-openinghours-contact-container{
         
     }
 }
+}
 
 footer{
     display: flex;
@@ -163,6 +162,7 @@ footer{
     background: $primaryColor;
     color: $primaryFontColor;
     width: 100%;
+    margin-top: 3rem;
 
 
     .footer-logga-img{

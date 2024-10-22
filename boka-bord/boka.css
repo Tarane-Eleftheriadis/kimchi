@@ -14,9 +14,6 @@ header .topnav a {
   text-decoration: none;
   font-weight: 700;
 }
-header .topnav a .firstpage-menu-link {
-  text-decoration: none;
-}
 header .topnav a .topnav-home-icon {
   width: 50%;
 }
@@ -35,6 +32,7 @@ header .topnav .topnav-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 1rem;
 }
 @media (min-width: 391px) {
   header .topnav .topnav-links {
@@ -56,33 +54,30 @@ main {
     background-color: #f4f4f4;
   }
 }
-
-div.firstpage-welcome-box {
+main div.firstpage-welcome-box {
   width: 90vw;
   height: auto;
   background-color: #f4f4f4;
   text-align: center;
   padding: 20px 0px;
-  margin-bottom: 5%;
+  margin-bottom: 2rem;
 }
 @media (min-width: 391px) {
-  div.firstpage-welcome-box {
+  main div.firstpage-welcome-box {
     width: 60vw;
     background-color: #ffffff;
-    margin-bottom: 1%;
   }
 }
-div.firstpage-welcome-box p.firstpage-welcome-box-p {
+main div.firstpage-welcome-box p.firstpage-welcome-box-p {
   line-height: 1.4;
   padding: 0 2% 5% 2%;
 }
 @media (min-width: 391px) {
-  div.firstpage-welcome-box p.firstpage-welcome-box-p {
+  main div.firstpage-welcome-box p.firstpage-welcome-box-p {
     padding: 0 5% 3% 5%;
   }
 }
-
-button {
+main button {
   padding: 15px 40px;
   font-size: 1rem;
   color: white;
@@ -92,11 +87,11 @@ button {
   border-radius: 20px;
   width: 50vw;
 }
-button:hover {
+main button:hover {
   background-color: #F0669E;
 }
 @media (min-width: 391px) {
-  button {
+  main button {
     padding: 12px 30px;
     color: white;
     background-color: rgb(67, 67, 67);
@@ -105,62 +100,58 @@ button:hover {
     border-radius: 20px;
     width: 15vw;
   }
-  button:hover {
+  main button:hover {
     background-color: #F0669E;
   }
 }
-
-.firstpage-img-chicken-and-mushroom {
+main .firstpage-img-chicken-and-mushroom {
   width: 90vw;
 }
 @media (min-width: 391px) {
-  .firstpage-img-chicken-and-mushroom {
+  main .firstpage-img-chicken-and-mushroom {
     width: 60vw;
     height: 60vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
-
-div.firstpage-openinghours-contact-container {
+main div.firstpage-openinghours-contact-container {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 391px) {
-  div.firstpage-openinghours-contact-container {
+  main div.firstpage-openinghours-contact-container {
     flex-direction: row;
   }
 }
-div.firstpage-openinghours-contact-container div.firstpage-openinghours {
+main div.firstpage-openinghours-contact-container div.firstpage-openinghours {
   background: #f4f4f4;
   width: 90vw;
   text-align: center;
-  margin: 20px 0;
+  margin-top: 2rem;
 }
 @media (min-width: 391px) {
-  div.firstpage-openinghours-contact-container div.firstpage-openinghours {
+  main div.firstpage-openinghours-contact-container div.firstpage-openinghours {
     width: 30vw;
     background-color: #ffffff;
-    margin: 2% 2% 2% 0%;
   }
 }
-div.firstpage-openinghours-contact-container div.firstpage-openinghours p.firstpage-openinghours-p {
+main div.firstpage-openinghours-contact-container div.firstpage-openinghours p.firstpage-openinghours-p {
   line-height: 0.8;
 }
-div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
+main div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
   background: #f4f4f4;
   width: 90vw;
   text-align: center;
-  margin-bottom: 5%;
+  margin-top: 2rem;
 }
 @media (min-width: 391px) {
-  div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
+  main div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
     width: 30vw;
     background-color: #ffffff;
-    margin: 2% 0% 2% 2%;
   }
 }
-div.firstpage-openinghours-contact-container div.firstpage-contactinfo p.firstpage-contactinfo-p {
+main div.firstpage-openinghours-contact-container div.firstpage-contactinfo p.firstpage-contactinfo-p {
   line-height: 0.8;
 }
 
@@ -171,6 +162,7 @@ footer {
   background: #F0669E;
   color: black;
   width: 100%;
+  margin-top: 3rem;
 }
 footer .footer-logga-img {
   width: 40%;
@@ -211,6 +203,11 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+@media (min-width: 391px) {
+  body {
+    background: #f4f4f4;
+  }
+}
 
 main {
   background: #ffffff;
@@ -232,13 +229,12 @@ div.boka-bord-img-text-container {
   display: flex;
   flex-direction: column;
   background: #f4f4f4;
-  margin: 5%;
+  margin: 0 1rem;
   padding: 5% 2% 2% 2%;
 }
 @media (min-width: 391px) {
   div.boka-bord-img-text-container {
-    width: 50vw;
-    margin: 2%;
+    width: 60vw;
     padding: 2%;
     background: #ffffff;
   }
@@ -264,7 +260,7 @@ form {
   background: #f4f4f4;
   padding: 3% 3% 15% 3%;
   width: 85vw;
-  margin-bottom: 5%;
+  margin-top: 1rem;
 }
 @media (min-width: 391px) {
   form {

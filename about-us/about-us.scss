@@ -5,6 +5,10 @@
 body{
     margin: 0;
     font-family: $primaryFont;
+
+    @media (min-width:391px){
+        background: $secondaryColor;
+    }
 }
 
 main{
@@ -12,7 +16,7 @@ main{
     article.aboutus-container{
         background:$secondaryColor;
         text-align: center;
-        margin: 5%;
+        margin: 0 1rem;
 
         p{
             padding: 2%;
@@ -30,7 +34,7 @@ main{
     }
 
     article.aboutus-employees-box{
-        margin: 0 5% 5% 5%;
+        margin: 0 1rem;
 
     .aboutus-employees-container-up{
         background: $secondaryColor;

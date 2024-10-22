@@ -5,4 +5,8 @@
 body{
     margin: 0%;
     font-family: $primaryFont;
+
+    @media (min-width:391px){
+        background: $secondaryColor;
+    }
 }
