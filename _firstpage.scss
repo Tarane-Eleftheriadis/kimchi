@@ -32,11 +32,11 @@ header{
         }
 
         .highlight{
-            color: $primaryColor;
+            text-decoration: underline;
         }
 
         a:hover {
-          color: $primaryColor;
+          text-decoration: underline;
         }
 
         .topnav-links{
