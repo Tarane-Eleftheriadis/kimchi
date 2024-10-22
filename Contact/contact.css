@@ -23,10 +23,10 @@ header .topnav a .topnav-home-icon {
   }
 }
 header .topnav .highlight {
-  color: #F0669E;
+  text-decoration: underline;
 }
 header .topnav a:hover {
-  color: #F0669E;
+  text-decoration: underline;
 }
 header .topnav .topnav-links {
   display: flex;
