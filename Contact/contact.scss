@@ -37,7 +37,7 @@
 
     @media (min-width:391px){
         background:$secondaryColor;
-        margin-bottom: 1%;
+        
     }
 }
 
@@ -45,15 +45,14 @@
 .contactIntroduction {
     background-color: $secondaryColor;
     width: 60;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
     
     @media (min-width:391px){
         background: $thirdColor;
         width: 60vw;
         margin-bottom: 1%;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+
+        
     }
     
     text-align: center;
@@ -66,7 +65,8 @@
 
     p {
         font-size: 1rem;
-        line-height: 1.5;
+        line-height: 0,8;
+        padding: 2%;
     }
 }
 
@@ -74,20 +74,26 @@
     width: 100%;
     max-width: 600px;
     background: $secondaryColor;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 
     @media (min-width:391px){
         background: $thirdColor;
         max-width: 60vw;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+        
     }
 
     .contactForm {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
+
+        select{
+            color: $primaryFontColor;
+            font-family: $primaryFont;
+            background-color: transparent;  
+            appearance: none;  
+            border: 1px solid $primaryFontColor;  
+                }
 
         .formGroup {
             display: flex;
@@ -132,27 +138,27 @@
     text-align: center;
     background-color: $secondaryColor;
     margin: 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 
     @media (min-width: 391px) {
         max-width: 60vw;
         background-color: $thirdColor;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+        line-height: 0,8%;
     }
 }
 
 
 .imageKimChi{
-    width: 100%;
-    max-width: 600px;
+
+    max-width: 60vw;
     margin-bottom: 30px;
+    object-fit: cover;
 
     img{
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
+        width: 60vw;
+        height: 60vh;
+        object-fit: cover;
+    
     }
 }
 
@@ -174,9 +180,6 @@
     background-color: $secondaryColor;
     text-align: center;
     padding: 0 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     p {
         font-size: 1rem;
@@ -185,8 +188,8 @@
     @media (min-width:391px){
         max-width: 60vw;
         background-color: $thirdColor;
-        margin-bottom: 1%;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.09);
+        margin-bottom: 0,5%;
+        
     }
 }
 
