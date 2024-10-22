@@ -227,17 +227,21 @@ main {
 }
 main #first-container {
   border: 4px, dotted, #F0669E;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 main #second-container {
   border: 5px, double, #F0669E;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 main .menu-container {
   width: 90vw;
   background: #f4f4f4;
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
-  margin-left: 1px;
-  margin-right: 1px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -257,8 +261,8 @@ main .menu-container .container {
   width: 80%;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 main .menu-container .container .specialfont {
   font-family: "Londrina Sketch";
