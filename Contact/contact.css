@@ -278,10 +278,6 @@ footer .footer-nav a {
 .contactFormSection .contactForm select {
   color: black;
   font-family: "Montserrat", sans-serif;
-  background-color: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   border: 1px solid black;
 }
 .contactFormSection .contactForm .formGroup {
@@ -294,7 +290,6 @@ footer .footer-nav a {
 .contactFormSection .contactForm .formGroup textarea {
   padding: 10px;
   font-size: 1rem;
-  color: rgb(140, 140, 140);
   color: black;
 }
 .contactFormSection .contactForm .formGroup input::-moz-placeholder, .contactFormSection .contactForm .formGroup select::-moz-placeholder, .contactFormSection .contactForm .formGroup textarea::-moz-placeholder {
@@ -340,30 +335,44 @@ footer .footer-nav a {
   }
 }
 
-.contactInfo {
+.imgAndContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 600px;
-  text-align: center;
-  background-color: #f4f4f4;
-  margin: 2rem;
 }
 @media (min-width: 391px) {
-  .contactInfo {
-    max-width: 30vw;
+  .imgAndContact {
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #ffffff;
-    line-height: 0, 8%;
+    margin: 1rem;
+    width: 60vw;
   }
 }
-
-.imageKimChi {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.imgAndContact .imageKimChi {
+  width: 90vw;
+  margin: 1rem;
 }
-.imageKimChi img {
-  width: 30vw;
+@media (min-width: 391px) {
+  .imgAndContact .imageKimChi {
+    width: 30vw;
+    margin: 1rem;
+  }
+}
+.imgAndContact .contactInfo {
+  width: 100%;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 1rem;
+}
+@media (min-width: 391px) {
+  .imgAndContact .contactInfo {
+    width: 30vw;
+    background-color: #ffffff;
+    line-height: 0, 8;
+  }
 }
 
 .googleMap {
