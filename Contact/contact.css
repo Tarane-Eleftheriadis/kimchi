@@ -49,7 +49,7 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   main {
     background-color: #f4f4f4;
   }
@@ -62,7 +62,7 @@ main div.firstpage-welcome-box {
   padding: 20px 0px;
   margin-bottom: 2rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   main div.firstpage-welcome-box {
     width: 60vw;
     background-color: #ffffff;
@@ -72,7 +72,7 @@ main div.firstpage-welcome-box p.firstpage-welcome-box-p {
   line-height: 1.4;
   padding: 0 2% 5% 2%;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   main div.firstpage-welcome-box p.firstpage-welcome-box-p {
     padding: 0 5% 3% 5%;
   }
@@ -108,7 +108,7 @@ main button:hover {
 main .firstpage-img-chicken-and-mushroom {
   width: 90vw;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   main .firstpage-img-chicken-and-mushroom {
     width: 60vw;
     height: 60vh;
@@ -120,7 +120,7 @@ main div.firstpage-openinghours-contact-container {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   main div.firstpage-openinghours-contact-container {
     flex-direction: row;
   }
@@ -131,7 +131,7 @@ main div.firstpage-openinghours-contact-container div.firstpage-openinghours {
   text-align: center;
   margin-top: 2rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   main div.firstpage-openinghours-contact-container div.firstpage-openinghours {
     width: 30vw;
     background-color: #ffffff;
@@ -146,7 +146,7 @@ main div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
   text-align: center;
   margin-top: 2rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   main div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
     width: 30vw;
     background-color: #ffffff;
@@ -168,7 +168,7 @@ footer {
 footer .footer-logga-img {
   width: 40%;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   footer .footer-logga-img {
     width: 8%;
   }
@@ -176,7 +176,7 @@ footer .footer-logga-img {
 footer p.footer-contactinfo-p {
   text-align: center;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   footer p.footer-contactinfo-p {
     font-size: 0.7rem;
     line-height: 0.5;
@@ -186,7 +186,7 @@ footer p.footer-copyright-text {
   text-align: center;
   font-size: 0.7rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 576px) {
   footer p.footer-copyright-text {
     font-size: 0.6rem;
   }
