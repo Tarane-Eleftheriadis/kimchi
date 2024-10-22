@@ -18,17 +18,19 @@ main{
 
         #first-container{
             @include border(4px,dotted,$primaryColor);
+            @include padding(0,0,0.5rem,0.5rem);
+
         }
 
         #second-container{
             @include border(5px,double,$primaryColor);
+            @include padding(0,0,0.5rem,0.5rem);
         }
 
 
     .menu-container{
         width: 90vw;
         background: $secondaryColor;
-        @include margin(0.9rem,0.9rem);
         @include flex(row,space-between,center);
 
         @media (min-width:391px){
@@ -40,7 +42,7 @@ main{
         .container{
             @include flex(column,space-between,space-evenly);
             width: 80%;
-            @include margin(0,0,0,1rem);
+            @include margin(0,0,0.5rem,0.5rem);
 
             .specialfont{
              font-family: $menuspecialfont;
