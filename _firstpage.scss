@@ -62,7 +62,7 @@ main{
     justify-content: space-around;
     align-items: center;
 
-    @media (min-width:391px){
+    @media (min-width:576px){
         background-color: $secondaryColor;
     }
 
@@ -75,7 +75,7 @@ main{
         padding: 20px 0px;
         margin-bottom: 2rem;
 
-        @media (min-width:391px){
+        @media (min-width:576px){
             width: 60vw;
             background-color: $thirdColor;
         }
@@ -85,7 +85,7 @@ main{
         line-height: 1.4;
         padding: 0 2% 5% 2%;
 
-        @media (min-width:391px){
+        @media (min-width:576px){
             padding: 0 5% 3% 5%;
         }
     }
@@ -102,7 +102,7 @@ button{
 .firstpage-img-chicken-and-mushroom{
     width: 90vw;
 
-    @media (min-width:391px){
+    @media (min-width:576px){
         width: 60vw;
         height: 60vh;
         object-fit: cover;
@@ -113,7 +113,7 @@ div.firstpage-openinghours-contact-container{
     display: flex;
     flex-direction: column;
 
-    @media (min-width:391px){
+    @media (min-width:576px){
         flex-direction: row;
         
     }
@@ -124,7 +124,7 @@ div.firstpage-openinghours-contact-container{
         text-align: center;
         margin-top: 2rem;
 
-        @media (min-width:391px){
+        @media (min-width:576px){
             width: 30vw;
             background-color: $thirdColor;
         }
@@ -141,7 +141,7 @@ div.firstpage-openinghours-contact-container{
         text-align: center;
         margin-top: 2rem;
 
-        @media (min-width:391px){
+        @media (min-width:576px){
             width: 30vw;
             background-color: $thirdColor;
         }
@@ -168,7 +168,7 @@ footer{
     .footer-logga-img{
         width: 40%;
 
-        @media (min-width:391px){
+        @media (min-width:576px){
             width: 8%;
          }
 
@@ -177,7 +177,7 @@ footer{
     p.footer-contactinfo-p{
             text-align: center;
 
-            @media (min-width:391px){
+            @media (min-width:576px){
                 font-size: 0.7rem;
                 line-height: 0.5;
              }
@@ -187,7 +187,7 @@ footer{
             text-align: center;
             font-size: 0.7rem;
 
-            @media (min-width:391px){
+            @media (min-width:576px){
                 font-size: 0.6rem;
              }
     }
