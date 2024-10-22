@@ -17,7 +17,7 @@ header .topnav a {
 header .topnav a .topnav-home-icon {
   width: 50%;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   header .topnav a {
     margin: 2% 0;
   }
@@ -34,7 +34,7 @@ header .topnav .topnav-links {
   align-items: center;
   margin-bottom: 1rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   header .topnav .topnav-links {
     background: #f4f4f4;
   }
@@ -204,7 +204,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   body {
     background: #f4f4f4;
   }
@@ -213,7 +213,7 @@ body {
 main {
   background: #ffffff;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main {
     display: flex;
     flex-direction: column;
@@ -233,7 +233,7 @@ div.boka-bord-img-text-container {
   margin: 0 1rem;
   padding: 5% 2% 2% 2%;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   div.boka-bord-img-text-container {
     width: 60vw;
     padding: 2%;
@@ -249,7 +249,7 @@ div.boka-bord-img-text-container img.boka-bord-img-matsal {
   margin-right: auto;
   width: 70vw;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   div.boka-bord-img-text-container img.boka-bord-img-matsal {
     width: 40vw;
   }
@@ -263,7 +263,7 @@ form {
   width: 85vw;
   margin-top: 1rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   form {
     padding: 2% 2% 5% 2%;
     background-color: #ffffff;
@@ -274,7 +274,7 @@ form input {
   color: rgb(140, 140, 140);
   padding: 1.5%;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   form input {
     margin: 0.7%;
     padding: 1%;
@@ -309,7 +309,7 @@ form .submit-bokabord:hover {
   background-color: #F0669E;
   color: black;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   form .submit-bokabord {
     padding: 12px 30px;
     color: white;
@@ -323,7 +323,7 @@ form .submit-bokabord:hover {
     background-color: #F0669E;
   }
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   form {
     width: 50vw;
   }
