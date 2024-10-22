@@ -89,6 +89,7 @@ main button {
 }
 main button:hover {
   background-color: #F0669E;
+  color: black;
 }
 @media (min-width: 391px) {
   main button {
@@ -322,6 +323,7 @@ main .menu-container .container button {
 }
 main .menu-container .container button:hover {
   background-color: #F0669E;
+  color: black;
 }
 @media (min-width: 391px) {
   main .menu-container .container button {

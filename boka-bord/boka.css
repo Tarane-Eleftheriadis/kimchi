@@ -89,6 +89,7 @@ main button {
 }
 main button:hover {
   background-color: #F0669E;
+  color: black;
 }
 @media (min-width: 391px) {
   main button {
@@ -306,6 +307,7 @@ form .submit-bokabord {
 }
 form .submit-bokabord:hover {
   background-color: #F0669E;
+  color: black;
 }
 @media (min-width: 391px) {
   form .submit-bokabord {

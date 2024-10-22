@@ -10,6 +10,7 @@
 
     &:hover {
         background-color: $primaryColor;
+        color:$primaryFontColor ;
     }
 }
 @mixin button-mobile-special{
