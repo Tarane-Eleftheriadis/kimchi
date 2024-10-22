@@ -91,7 +91,7 @@ main button:hover {
   background-color: #F0669E;
   color: black;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main button {
     padding: 12px 30px;
     color: white;
