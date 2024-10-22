@@ -86,9 +86,7 @@
 
         select{
             color: $primaryFontColor;
-            font-family: $primaryFont;
-            background-color: transparent;  
-            appearance: none;  
+            font-family: $primaryFont; 
             border: 1px solid $primaryFontColor;  
                 }
 
@@ -103,7 +101,6 @@
             textarea {
                 padding: 10px;
                 font-size: 1rem;    
-                color: rgb(140, 140, 140);
                 color: $primaryFontColor;
 
                 &::placeholder {
@@ -128,33 +125,42 @@
     }
 }
 
-.contactInfo {
+.imgAndContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 600px;
     
-    text-align: center;
-    background-color: $secondaryColor;
-    margin: 2rem;
-    
+        @media (min-width: 391px) {
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $thirdColor;
+            margin: 1rem;
+            width: 60vw;
+        }
 
-    @media (min-width: 391px) {
-        max-width: 30vw;
-        background-color: $thirdColor;
-        line-height: 0,8%;
+    .imageKimChi {
+        width: 90vw;
+        margin: 1rem;
+
+        @media (min-width: 391px) {
+            width: 30vw;
+            margin: 1rem;
+        }
     }
-}
 
+    .contactInfo {
+        width: 100%;
+        text-align: center;
+        background-color: $secondaryColor;
+        margin: 1rem;
 
-.imageKimChi{
-
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 5%;
-    object-fit: cover;
-
-    img{
-        width: 30vw;
-    
+        @media (min-width: 391px) {
+            width: 30vw;
+            background-color: $thirdColor;
+            line-height: 0,8;
+        }
     }
 }
 
@@ -194,10 +200,6 @@
     .contactMain {
         padding: 0 1rem;
     }
-
-    
-
-
         .submitButton {
             padding: 15px 50px;
         }
