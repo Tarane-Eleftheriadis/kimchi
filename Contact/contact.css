@@ -2,7 +2,7 @@ header .header-container {
   display: flex;
   background: #F0669E;
   height: 30vh;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -166,7 +166,8 @@ footer {
   flex-direction: column;
   align-items: center;
   background: #F0669E;
-  width: 100vw;
+  color: black;
+  width: 100%;
 }
 footer .footer-logga-img {
   width: 40%;
@@ -178,33 +179,29 @@ footer .footer-logga-img {
 }
 footer p.footer-contactinfo-p {
   text-align: center;
-  color: white;
 }
 @media (min-width: 391px) {
   footer p.footer-contactinfo-p {
-    color: white;
     font-size: 0.7rem;
     line-height: 0.5;
   }
 }
 footer p.footer-copyright-text {
   text-align: center;
-  color: white;
   font-size: 0.7rem;
 }
 @media (min-width: 391px) {
   footer p.footer-copyright-text {
-    color: white;
     font-size: 0.6rem;
   }
 }
 footer hr {
-  border: 0.001rem solid #f4f4f4;
+  border: 0.001rem solid black;
   width: 40%;
 }
 footer .footer-nav a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .visually-hidden {
