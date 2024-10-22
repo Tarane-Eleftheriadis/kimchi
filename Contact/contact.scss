@@ -138,7 +138,7 @@
     
 
     @media (min-width: 391px) {
-        max-width: 60vw;
+        max-width: 30vw;
         background-color: $thirdColor;
         line-height: 0,8%;
     }
@@ -153,9 +153,7 @@
     object-fit: cover;
 
     img{
-        max-width: 100%;
-        height: 60vw;
-        object-fit: cover;
+        width: 30vw;
     
     }
 }
@@ -197,39 +195,12 @@
         padding: 0 1rem;
     }
 
-    .contactHeader h1 {
-        font-size: 2.5rem;
-    }
+    
 
-    .contactIntroduction h2 {
-        font-size: 2rem;
-    }
-
-    .contactIntroduction p,
-    .additionalInfo p {
-        font-size: 1.1rem;
-    }
-
-    .contactFormSection .contactForm {
-        .formGroup {
-            input,
-            select,
-            textarea {
-                font-size: 1.1rem;
-            }
-        }
 
         .submitButton {
-            font-size: 1.1rem;
             padding: 15px 50px;
         }
     }
 
-    .contactInfo h2 {
-        font-size: 2rem;
-    }
-
-    .contactInfo ul li {
-        font-size: 1.1rem;
-    }
-}
+   
