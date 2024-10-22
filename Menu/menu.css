@@ -219,10 +219,6 @@ main {
 }
 main #first-container {
   border: 4px, dotted, #F0669E;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 main #second-container {
   border: 5px, double, #F0669E;
@@ -244,6 +240,9 @@ main .menu-container {
     width: 60vw;
     background: #ffffff;
   }
+}
+main .menu-container #last-menu-container {
+  margin-bottom: 1rem;
 }
 main .menu-container .container {
   display: flex;

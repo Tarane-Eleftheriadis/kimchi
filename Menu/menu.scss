@@ -18,7 +18,6 @@ main{
 
         #first-container{
             @include border(4px,dotted,$primaryColor);
-            @include padding(0,0,0.5rem,0.5rem);
 
         }
 
@@ -32,13 +31,16 @@ main{
         width: 90vw;
         background: $secondaryColor;
         @include flex(row,space-between,center);
-
+        
         @media (min-width:391px){
             width: 60vw;
             background: $thirdColor;
          }
       
-        
+        #last-menu-container{
+            margin-bottom: 1rem;
+        }
+
         .container{
             @include flex(column,space-between,space-evenly);
             width: 80%;

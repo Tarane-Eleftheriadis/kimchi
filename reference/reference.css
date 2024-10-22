@@ -225,10 +225,10 @@ main {
 main .first-betyg-container {
   width: 90vw;
   background-color: #f4f4f4;
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,10 +247,6 @@ main .first-betyg-container p {
 main .betyg-container {
   width: 90vw;
   background-color: #f4f4f4;
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
-  margin-left: 1px;
-  margin-right: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -263,7 +259,7 @@ main .betyg-container {
   }
 }
 main .betyg-container .img-kimchi {
-  width: 90%;
+  width: 100%;
   height: 60%;
 }
 @media (min-width: 391px) {
@@ -285,7 +281,7 @@ main .betyg-container .img-star {
 main .betyg-container .img-person {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 0;
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 main .betyg-container .container {
