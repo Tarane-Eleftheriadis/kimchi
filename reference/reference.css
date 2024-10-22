@@ -17,7 +17,7 @@ header .topnav a {
 header .topnav a .topnav-home-icon {
   width: 50%;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   header .topnav a {
     margin: 2% 0;
   }
@@ -34,7 +34,7 @@ header .topnav .topnav-links {
   align-items: center;
   margin-bottom: 1rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   header .topnav .topnav-links {
     background: #f4f4f4;
   }
