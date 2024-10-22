@@ -19,7 +19,6 @@
     font-family: $primaryFont;
     background:$thirdColor;
     margin: 0;
-    padding: 0;
 
     @media (min-width:391px){
         background: $secondaryColor; 
@@ -32,7 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0 1rem;
     
 
     @media (min-width:391px){
@@ -50,8 +49,6 @@
     @media (min-width:391px){
         background: $thirdColor;
         width: 60vw;
-        margin-bottom: 1%;
-
         
     }
     
@@ -197,7 +194,7 @@
 
 @media (min-width: 768px) {
     .contactMain {
-        padding: 40px;
+        padding: 0 1rem;
     }
 
     .contactHeader h1 {
