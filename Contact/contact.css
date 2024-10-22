@@ -347,7 +347,7 @@ footer .footer-nav a {
 }
 @media (min-width: 391px) {
   .contactInfo {
-    max-width: 60vw;
+    max-width: 30vw;
     background-color: #ffffff;
     line-height: 0, 8%;
   }
@@ -361,10 +361,7 @@ footer .footer-nav a {
      object-fit: cover;
 }
 .imageKimChi img {
-  max-width: 100%;
-  height: 60vw;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 30vw;
 }
 
 .googleMap {
@@ -401,29 +398,7 @@ footer .footer-nav a {
   .contactMain {
     padding: 0 1rem;
   }
-  .contactHeader h1 {
-    font-size: 2.5rem;
-  }
-  .contactIntroduction h2 {
-    font-size: 2rem;
-  }
-  .contactIntroduction p,
-  .additionalInfo p {
-    font-size: 1.1rem;
-  }
-  .contactFormSection .contactForm .formGroup input,
-  .contactFormSection .contactForm .formGroup select,
-  .contactFormSection .contactForm .formGroup textarea {
-    font-size: 1.1rem;
-  }
-  .contactFormSection .contactForm .submitButton {
-    font-size: 1.1rem;
+  .submitButton {
     padding: 15px 50px;
-  }
-  .contactInfo h2 {
-    font-size: 2rem;
-  }
-  .contactInfo ul li {
-    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=contact.css.map */
