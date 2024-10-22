@@ -14,9 +14,6 @@ header .topnav a {
   text-decoration: none;
   font-weight: 700;
 }
-header .topnav a .firstpage-menu-link {
-  text-decoration: none;
-}
 header .topnav a .topnav-home-icon {
   width: 50%;
 }
@@ -249,7 +246,7 @@ footer .footer-nav a {
   background-color: #f4f4f4;
   width: 60;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 @media (min-width: 391px) {
   .contactIntroduction {
@@ -260,7 +257,7 @@ footer .footer-nav a {
 }
 .contactIntroduction h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 .contactIntroduction p {
   font-size: 1rem;
@@ -296,7 +293,6 @@ footer .footer-nav a {
 .contactFormSection .contactForm .formGroup {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
   margin: 2%;
 }
 .contactFormSection .contactForm .formGroup input,
@@ -352,7 +348,6 @@ footer .footer-nav a {
 .contactInfo {
   width: 100%;
   max-width: 600px;
-  margin-bottom: 30px;
   text-align: center;
   background-color: #f4f4f4;
   margin: 5%;
@@ -366,14 +361,15 @@ footer .footer-nav a {
 }
 
 .imageKimChi {
-  max-width: 60vw;
-  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .imageKimChi img {
-  width: 60vw;
-  height: 60vh;
+  max-width: 100%;
+  height: 60vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -381,7 +377,7 @@ footer .footer-nav a {
 .googleMap {
   width: 100%;
   max-width: 600px;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 .googleMap iframe {
   width: 100%;
@@ -411,13 +407,6 @@ footer .footer-nav a {
 @media (min-width: 768px) {
   .contactMain {
     padding: 40px;
-  }
-  .contactIntroduction,
-  .contactFormSection,
-  .contactInfo,
-  .googleMap,
-  .additionalInfo {
-    margin-bottom: 40px;
   }
   .contactHeader h1 {
     font-size: 2.5rem;
