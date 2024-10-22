@@ -89,6 +89,7 @@ main button {
 }
 main button:hover {
   background-color: #F0669E;
+  color: black;
 }
 @media (min-width: 391px) {
   main button {
@@ -322,6 +323,7 @@ footer .footer-nav a {
 }
 .contactFormSection .contactForm .submitButton:hover {
   background-color: #F0669E;
+  color: black;
 }
 @media (min-width: 391px) {
   .contactFormSection .contactForm .submitButton {
