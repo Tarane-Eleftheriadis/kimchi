@@ -125,34 +125,34 @@ main div.firstpage-openinghours-contact-container {
     flex-direction: row;
   }
 }
-main div.firstpage-openinghours-contact-container div.firstpage-openinghours {
+main div.firstpage-openinghours-contact-container article.firstpage-openinghours {
   background: #f4f4f4;
   width: 90vw;
   text-align: center;
   margin-top: 2rem;
 }
 @media (min-width: 786px) {
-  main div.firstpage-openinghours-contact-container div.firstpage-openinghours {
+  main div.firstpage-openinghours-contact-container article.firstpage-openinghours {
     width: 30vw;
     background-color: #ffffff;
   }
 }
-main div.firstpage-openinghours-contact-container div.firstpage-openinghours p.firstpage-openinghours-p {
+main div.firstpage-openinghours-contact-container article.firstpage-openinghours p.firstpage-openinghours-p {
   line-height: 0.8;
 }
-main div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
+main div.firstpage-openinghours-contact-container article.firstpage-contactinfo {
   background: #f4f4f4;
   width: 90vw;
   text-align: center;
   margin-top: 2rem;
 }
 @media (min-width: 786px) {
-  main div.firstpage-openinghours-contact-container div.firstpage-contactinfo {
+  main div.firstpage-openinghours-contact-container article.firstpage-contactinfo {
     width: 30vw;
     background-color: #ffffff;
   }
 }
-main div.firstpage-openinghours-contact-container div.firstpage-contactinfo p.firstpage-contactinfo-p {
+main div.firstpage-openinghours-contact-container article.firstpage-contactinfo p.firstpage-contactinfo-p {
   line-height: 0.8;
 }
 
@@ -229,7 +229,10 @@ main article.aboutus-container h3 {
   }
 }
 main article.aboutus-employees-box {
-  margin: 0 1rem;
+  margin: 1rem;
+}
+main article.aboutus-employees-box h2 {
+  text-align: center;
 }
 main article.aboutus-employees-box .aboutus-employees-container-up {
   background: #f4f4f4;
