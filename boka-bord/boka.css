@@ -209,39 +209,33 @@ body {
     background: #f4f4f4;
   }
 }
-body main {
-  background: #ffffff;
-}
 @media (min-width: 786px) {
   body main {
     background: #f4f4f4;
   }
 }
-body main div.boka-bord-img-text-container {
+body main article.boka-bord-img-text-container {
   background: #f4f4f4;
-  margin: 0 1rem;
-  padding: 2%;
+  width: 90vw;
 }
 @media (min-width: 786px) {
-  body main div.boka-bord-img-text-container {
+  body main article.boka-bord-img-text-container {
     width: 60vw;
     background: #ffffff;
   }
 }
-body main div.boka-bord-img-text-container h1 {
+body main article.boka-bord-img-text-container .boka-bord-firstbox-center {
   text-align: center;
+  padding: 2%;
 }
-body main div.boka-bord-img-text-container p {
-  text-align: center;
-}
-body main div.boka-bord-img-text-container img.boka-bord-img-matsal {
+body main article.boka-bord-img-text-container img.boka-bord-img-matsal {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70vw;
 }
 @media (min-width: 786px) {
-  body main div.boka-bord-img-text-container img.boka-bord-img-matsal {
+  body main article.boka-bord-img-text-container img.boka-bord-img-matsal {
     width: 40vw;
   }
 }
@@ -249,9 +243,8 @@ body main form {
   display: flex;
   flex-direction: column;
   background: #f4f4f4;
-  padding: 1% 1% 15% 1%;
   width: 90vw;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 body main form ::-moz-placeholder {
   color: black;
@@ -261,7 +254,6 @@ body main form ::placeholder {
 }
 @media (min-width: 786px) {
   body main form {
-    padding: 2% 2% 5% 2%;
     background-color: #ffffff;
     width: 60vw;
   }
@@ -273,7 +265,7 @@ body main form input {
 }
 @media (min-width: 786px) {
   body main form input {
-    margin: 0.7%;
+    margin: 1%;
     padding: 1%;
   }
 }

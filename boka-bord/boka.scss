@@ -11,29 +11,24 @@ body{
     }
 
     main{
-        background:$thirdColor;
 
         @media (min-width:786px){
             background: $secondaryColor;
         }
 
-        div.boka-bord-img-text-container{
+        article.boka-bord-img-text-container{
             background: $secondaryColor;
-            margin: 0 1rem;
-            padding: 2%;
+            width: 90vw;
 
             @media (min-width:786px){
             width: 60vw;
             background: $thirdColor;
             }
 
-            h1{
-                text-align: center;
-            }
-
-            p{
-                text-align: center;
-            }
+           .boka-bord-firstbox-center{
+            text-align: center;
+            padding: 2%;
+           }
 
             img.boka-bord-img-matsal{
                 display: block;
@@ -51,16 +46,14 @@ body{
             display: flex;
             flex-direction: column;
             background: $secondaryColor;
-            padding: 1% 1% 15% 1%;
             width: 90vw;
-            margin-top: 1rem;
+            margin-top: 2rem;
 
             ::placeholder{
                 color: $primaryFontColor;
             }
 
             @media (min-width:786px){
-                padding: 2% 2% 5% 2%;
                 background-color: $thirdColor;
                 width: 60vw;
                 }
@@ -71,7 +64,7 @@ body{
                 font-size: 1rem;
 
                 @media (min-width:786px){
-                margin: 0.7%;
+                margin: 1%;
                 padding: 1%;
                 }
             }
@@ -102,7 +95,6 @@ body{
                     @include button-desktop();
                 }
             }
-
         }
     }
 }
