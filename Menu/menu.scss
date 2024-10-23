@@ -29,6 +29,22 @@ main{
             @include padding(0,0,0.5rem,0.5rem);
         }
 
+    .lime-container{
+        @include flex(column,space-between,flex-end);
+            width: 80%;
+    }
+
+    #last-menu-container{
+        width: 90vw;
+        background: $secondaryColor;
+        @include flex(row,space-evenly,center);
+        @include padding(1rem,1rem,0,0);
+            
+        @media (min-width:391px){
+            width: 60vw;
+            background: $thirdColor;
+            }
+    } 
 
     .menu-container{
         width: 90vw;
@@ -39,10 +55,7 @@ main{
             width: 60vw;
             background: $thirdColor;
          }
-      
-        #last-menu-container{
-            margin-bottom: 1rem;
-        }
+ 
 
         .container{
             @include flex(column,space-between,space-evenly);

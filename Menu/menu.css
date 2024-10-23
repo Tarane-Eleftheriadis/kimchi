@@ -232,6 +232,31 @@ main #second-container {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+main .lime-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+}
+main #last-menu-container {
+  width: 90vw;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 391px) {
+  main #last-menu-container {
+    width: 60vw;
+    background: #ffffff;
+  }
+}
 main .menu-container {
   width: 90vw;
   background: #f4f4f4;
@@ -245,9 +270,6 @@ main .menu-container {
     width: 60vw;
     background: #ffffff;
   }
-}
-main .menu-container #last-menu-container {
-  margin-bottom: 1rem;
 }
 main .menu-container .container {
   display: flex;
