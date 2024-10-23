@@ -20,7 +20,9 @@
     background:$thirdColor;
     margin: 0;
 
+
     @media (min-width:786px){
+
         background: $secondaryColor; 
         width: 60wv;
         margin: 0;
@@ -33,7 +35,10 @@
     align-items: center;
     padding: 0 1rem;
 
-    @media (min-width:786px){
+
+
+    @media (min-width: 786px){
+
         background:$secondaryColor;
     }
 }
@@ -41,8 +46,9 @@
 
 .contactIntroduction {
     background-color: $secondaryColor;
-  
-    @media (min-width:786px){
+
+    @media (min-width: 786px){
+
         background: $thirdColor;
         width: 60vw;
     }
@@ -63,7 +69,9 @@
     background: $secondaryColor;
 
 
-    @media (min-width:786px){
+
+    @media (min-width: 786px){
+
         background: $thirdColor;
         max-width: 60vw;
     }
@@ -106,7 +114,9 @@
 
             @include button-mobile();
 
+
             @media (min-width:786px){
+
                 @include button-desktop();
             }
         }
@@ -120,7 +130,9 @@
     justify-content: center;
     width: 100%;
     
+
         @media (min-width:786px){
+
             flex-direction: row;
             justify-content: space-between;
             background-color: $thirdColor;
@@ -132,7 +144,9 @@
         width: 90vw;
         margin: 1rem;
 
+
         @media (min-width:786px){
+
             width: 30vw;
             margin: 1rem;
         }
@@ -144,7 +158,9 @@
         background-color: $secondaryColor;
         margin: 1rem;
 
+
         @media (min-width:786px){
+
             width: 30vw;
             background-color: $thirdColor;
             line-height: 0,8;
@@ -173,7 +189,9 @@
         font-size: 1rem;
         line-height: 1.6;
     }
+
     @media (min-width:786px){
+
         max-width: 60vw;
         background-color: $thirdColor;
         margin-bottom: 1,5rem;
