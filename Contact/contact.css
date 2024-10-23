@@ -91,7 +91,7 @@ main button:hover {
   background-color: #F0669E;
   color: black;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main button {
     padding: 12px 30px;
     color: white;
@@ -217,7 +217,7 @@ footer .footer-nav a {
   background: #ffffff;
   margin: 0;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .contactBody {
     background: #f4f4f4;
     width: 60wv;
@@ -231,7 +231,7 @@ footer .footer-nav a {
   align-items: center;
   padding: 0 1rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .contactMain {
     background: #f4f4f4;
   }
@@ -243,7 +243,7 @@ footer .footer-nav a {
   text-align: center;
   margin-bottom: 2rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .contactIntroduction {
     background: #ffffff;
     width: 60vw;
@@ -264,7 +264,7 @@ footer .footer-nav a {
   max-width: 600px;
   background: #f4f4f4;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .contactFormSection {
     background: #ffffff;
     max-width: 60vw;
@@ -320,7 +320,7 @@ footer .footer-nav a {
   background-color: #F0669E;
   color: black;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .contactFormSection .contactForm .submitButton {
     padding: 12px 30px;
     color: white;
@@ -342,7 +342,7 @@ footer .footer-nav a {
   justify-content: center;
   width: 100%;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .imgAndContact {
     flex-direction: row;
     justify-content: space-between;
@@ -355,7 +355,7 @@ footer .footer-nav a {
   width: 90vw;
   margin: 1rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .imgAndContact .imageKimChi {
     width: 30vw;
     margin: 1rem;
@@ -367,7 +367,7 @@ footer .footer-nav a {
   background-color: #f4f4f4;
   margin: 1rem;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .imgAndContact .contactInfo {
     width: 30vw;
     background-color: #ffffff;
@@ -397,7 +397,7 @@ footer .footer-nav a {
   font-size: 1rem;
   line-height: 1.6;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   .additionalInfo {
     max-width: 60vw;
     background-color: #ffffff;
