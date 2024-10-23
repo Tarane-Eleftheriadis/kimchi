@@ -62,6 +62,10 @@ body{
             width: 90vw;
             margin-top: 1rem;
 
+            ::placeholder{
+                color: $primaryFontColor;
+            }
+
             @media (min-width:786px){
                 padding: 2% 2% 5% 2%;
                 background-color: $thirdColor;
@@ -70,7 +74,6 @@ body{
 
             input{
                 margin: 2%;
-                color: rgb(140, 140, 140);
                 padding: 10px;
                 font-size: 1rem;
 
