@@ -91,7 +91,7 @@ main button:hover {
   background-color: #F0669E;
   color: black;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main button {
     padding: 12px 30px;
     color: white;
@@ -204,21 +204,20 @@ body {
   margin: 0%;
   font-family: "Montserrat", sans-serif;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   body {
     background: #f4f4f4;
   }
 }
 
 main {
-  background: #ffffff;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main {
     background: #f4f4f4;
   }
@@ -241,7 +240,7 @@ main .menu-container {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main .menu-container {
     width: 60vw;
     background: #ffffff;
@@ -296,7 +295,7 @@ main .menu-container .container #special-button {
 main .menu-container .container #special-button:hover {
   background-color: rgb(67, 67, 67);
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main .menu-container .container #special-button {
     width: 40%;
     padding: 12px 30px;
@@ -325,7 +324,7 @@ main .menu-container .container button:hover {
   background-color: #F0669E;
   color: black;
 }
-@media (min-width: 391px) {
+@media (min-width: 786px) {
   main .menu-container .container button {
     width: 40%;
     padding: 12px 30px;

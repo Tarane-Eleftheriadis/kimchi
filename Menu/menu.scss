@@ -6,17 +6,16 @@ body{
     margin: 0%;
     font-family: $primaryFont;
 
-    @media (min-width:391px){
+    @media (min-width:786px){
         background: $secondaryColor;
     }
 }
 
 main{
-    background:$thirdColor;
     height: 100%;
     @include flex(column,flex-start,center);
 
-    @media (min-width:391px){
+    @media (min-width:786px){
         background: $secondaryColor;
     }
 
@@ -36,7 +35,7 @@ main{
         background: $secondaryColor;
         @include flex(row,space-between,center);
         
-        @media (min-width:391px){
+        @media (min-width:786px){
             width: 60vw;
             background: $thirdColor;
          }
@@ -72,7 +71,7 @@ main{
             #special-button{
                 @include button-mobile-special;
 
-                @media (min-width:391px){
+                @media (min-width:786px){
                     width: 40%;
                     @include button-desktop-special;
                     
@@ -83,7 +82,7 @@ main{
             button{
                 @include button-mobile;
 
-                @media (min-width:391px){
+                @media (min-width:786px){
                     width: 40%;
                     @include button-desktop;
                     
