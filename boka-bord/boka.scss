@@ -14,22 +14,16 @@ body{
         background:$thirdColor;
 
         @media (min-width:786px){
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
             background: $secondaryColor;
         }
 
         div.boka-bord-img-text-container{
-            display: flex;
-            flex-direction: column;
             background: $secondaryColor;
             margin: 0 1rem;
-            padding: 5% 2% 2% 2%;
+            padding: 2%;
 
             @media (min-width:786px){
             width: 60vw;
-            padding: 2%;
             background: $thirdColor;
             }
 
@@ -50,7 +44,6 @@ body{
                 @media (min-width:786px){
                     width: 40vw;
                 }
-            
             }
         }
 
