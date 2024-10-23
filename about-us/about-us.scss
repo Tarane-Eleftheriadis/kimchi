@@ -34,66 +34,70 @@ main{
     }
 
     article.aboutus-employees-box{
-        margin: 0 1rem;
+        margin: 1rem;
 
-    .aboutus-employees-container-up{
-        background: $secondaryColor;
-        display: flex;
-
-        @media (min-width: 786px) {
-            background: $thirdColor; 
-            width: 60vw;         
-            margin: 0;  
+        h2{
+            text-align: center;
         }
 
-        .aboutus-employees-img-text{
-         text-align: center;
-         width: 33%;
-         padding: 2%;
-         
-         .title{
-            font-weight: bold;
-         }
-        }
-
-        img.employees-img{
-            width: 20vw;
-            border-radius: 50%;
+        .aboutus-employees-container-up{
+            background: $secondaryColor;
+            display: flex;
 
             @media (min-width: 786px) {
-                width: 7vw;            
+                background: $thirdColor; 
+                width: 60vw;         
+                margin: 0;  
             }
-        }
-    }
 
-    div.aboutus-employees-container-down{
-        background: $secondaryColor;
-        display: flex;
-
-        @media (min-width: 786px) {
-            background: $thirdColor;  
-            width: 60vw;         
-        }
-
-        .aboutus-employees-img-text{
+            .aboutus-employees-img-text{
             text-align: center;
             width: 33%;
             padding: 2%;
-
+            
             .title{
                 font-weight: bold;
-             }
-           }
-   
-           img.employees-img{
-               width: 20vw;
-               border-radius: 50%;
-
-               @media (min-width: 786px) {
-                width: 7vw;            
             }
+            }
+
+            img.employees-img{
+                width: 20vw;
+                border-radius: 50%;
+
+                @media (min-width: 786px) {
+                    width: 7vw;            
+                }
+            }
+        }
+
+        div.aboutus-employees-container-down{
+            background: $secondaryColor;
+            display: flex;
+
+            @media (min-width: 786px) {
+                background: $thirdColor;  
+                width: 60vw;         
+            }
+
+            .aboutus-employees-img-text{
+                text-align: center;
+                width: 33%;
+                padding: 2%;
+
+                .title{
+                    font-weight: bold;
+                }
+            }
+    
+            img.employees-img{
+                width: 20vw;
+                border-radius: 50%;
+
+                @media (min-width: 786px) {
+                    width: 7vw;            
+                }
            }
-    }
+        }
 
     }
   
