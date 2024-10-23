@@ -20,7 +20,9 @@
     background:$thirdColor;
     margin: 0;
 
-    @media (min-width: 786px){
+
+    @media (min-width:786px){
+
         background: $secondaryColor; 
         width: 60wv;
         margin: 0;
@@ -32,33 +34,27 @@
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
-    
+
+
 
     @media (min-width: 786px){
+
         background:$secondaryColor;
-        
     }
 }
 
 
 .contactIntroduction {
     background-color: $secondaryColor;
-    width: 60;
-    
-    
+
     @media (min-width: 786px){
+
         background: $thirdColor;
         width: 60vw;
-        
     }
     
     text-align: center;
     margin-bottom: 2rem;
-
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 5%;
-    }
 
     p {
         font-size: 1rem;
@@ -73,16 +69,17 @@
     background: $secondaryColor;
 
 
+
     @media (min-width: 786px){
+
         background: $thirdColor;
         max-width: 60vw;
-        
     }
 
     .contactForm {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 2rem;
 
         select{
             color: $primaryFontColor;
@@ -93,8 +90,7 @@
         .formGroup {
             display: flex;
             flex-direction: column;
-            
-            margin: 2%;
+            margin: 1rem;
 
             input,
             select,
@@ -114,11 +110,13 @@
 
         .submitButton {
             align-self: flex-end;
-            margin: 5%;
+            margin: 2rem;
 
             @include button-mobile();
 
-            @media (min-width: 786px){
+
+            @media (min-width:786px){
+
                 @include button-desktop();
             }
         }
@@ -132,7 +130,9 @@
     justify-content: center;
     width: 100%;
     
-    @media (min-width: 786px) {
+
+        @media (min-width:786px){
+
             flex-direction: row;
             justify-content: space-between;
             background-color: $thirdColor;
@@ -144,7 +144,9 @@
         width: 90vw;
         margin: 1rem;
 
-        @media (min-width: 786px) {
+
+        @media (min-width:786px){
+
             width: 30vw;
             margin: 1rem;
         }
@@ -156,7 +158,9 @@
         background-color: $secondaryColor;
         margin: 1rem;
 
-        @media (min-width: 786px) {
+
+        @media (min-width:786px){
+
             width: 30vw;
             background-color: $thirdColor;
             line-height: 0,8;
@@ -171,8 +175,6 @@
 
     iframe {
         width: 100%;
-        height: 300px;
-        border: none;
         border-radius: 10px;
     }
 }
@@ -187,22 +189,12 @@
         font-size: 1rem;
         line-height: 1.6;
     }
-    @media (min-width: 786px){
+
+    @media (min-width:786px){
+
         max-width: 60vw;
         background-color: $thirdColor;
-        margin-bottom: 0,5%;
-        
+        margin-bottom: 1,5rem;
     }
 }
 
-
-@media (min-width: 768px) {
-    .contactMain {
-        padding: 0 1rem;
-    }
-        .submitButton {
-            padding: 15px 50px;
-        }
-    }
-
-   
