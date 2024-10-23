@@ -34,7 +34,7 @@ main{
             width: 80%;
     }
 
-    #last-menu-container{
+    .last-menu-container{
         width: 90vw;
         background: $secondaryColor;
         @include flex(row,space-evenly,center);

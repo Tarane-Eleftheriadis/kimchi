@@ -239,7 +239,7 @@ main .lime-container {
   align-items: flex-end;
   width: 80%;
 }
-main #last-menu-container {
+main .last-menu-container {
   width: 90vw;
   background: #f4f4f4;
   display: flex;
@@ -252,7 +252,7 @@ main #last-menu-container {
   padding-right: 0;
 }
 @media (min-width: 391px) {
-  main #last-menu-container {
+  main .last-menu-container {
     width: 60vw;
     background: #ffffff;
   }
