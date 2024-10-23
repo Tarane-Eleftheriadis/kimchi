@@ -6,7 +6,7 @@ body{
     margin: 0;
     font-family:$primaryFont;
 
-    @media (min-width:391px){
+    @media (min-width:786px){
         background: $secondaryColor;
     }
 }
@@ -14,7 +14,7 @@ body{
 main{
     background:$thirdColor;
 
-    @media (min-width:391px){
+    @media (min-width:786px){
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -34,7 +34,7 @@ div.boka-bord-img-text-container{
     margin: 0 1rem;
     padding: 5% 2% 2% 2%;
 
-    @media (min-width:391px){
+    @media (min-width:786px){
       width: 60vw;
       padding: 2%;
       background: $thirdColor;
@@ -50,7 +50,7 @@ div.boka-bord-img-text-container{
         margin-right: auto;
         width: 70vw;
 
-        @media (min-width:391px){
+        @media (min-width:786px){
             width: 40vw;
         }
         
@@ -65,7 +65,7 @@ form{
     width: 85vw;
     margin-top: 1rem;
 
-    @media (min-width:391px){
+    @media (min-width:786px){
         padding: 2% 2% 5% 2%;
         background-color: $thirdColor;
         }
@@ -75,7 +75,7 @@ form{
         color: rgb(140, 140, 140);
         padding: 1.5%;
 
-        @media (min-width:391px){
+        @media (min-width:786px){
         margin: 0.7%;
         padding: 1%;
         }
@@ -105,14 +105,14 @@ form{
 
         @include button-mobile ();
     
-        @media (min-width:391px){
+        @media (min-width:786px){
             @include button-desktop();
         }
 
 
     }
 
-    @media (min-width:391px){
+    @media (min-width:786px){
         width: 50vw;
       }
 }
