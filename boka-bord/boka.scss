@@ -9,110 +9,104 @@ body{
     @media (min-width:786px){
         background: $secondaryColor;
     }
-}
 
-main{
-    background:$thirdColor;
-
-    @media (min-width:786px){
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        background: $secondaryColor;
-      }
-   
-}
-
-h1{
-    text-align: center;
-}
-
-div.boka-bord-img-text-container{
-    display: flex;
-    flex-direction: column;
-    background: $secondaryColor;
-    margin: 0 1rem;
-    padding: 5% 2% 2% 2%;
-
-    @media (min-width:786px){
-      width: 60vw;
-      padding: 2%;
-      background: $thirdColor;
-    }
-
-    p{
-        text-align: center;
-    }
-
-    img.boka-bord-img-matsal{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 70vw;
+    main{
+        background:$thirdColor;
 
         @media (min-width:786px){
-            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            background: $secondaryColor;
         }
+
+        div.boka-bord-img-text-container{
+            display: flex;
+            flex-direction: column;
+            background: $secondaryColor;
+            margin: 0 1rem;
+            padding: 5% 2% 2% 2%;
+
+            @media (min-width:786px){
+            width: 60vw;
+            padding: 2%;
+            background: $thirdColor;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            img.boka-bord-img-matsal{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70vw;
+
+                @media (min-width:786px){
+                    width: 40vw;
+                }
+            
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            background: $secondaryColor;
+            padding: 1% 1% 15% 1%;
+            width: 90vw;
+            margin-top: 1rem;
+
+            @media (min-width:786px){
+                padding: 2% 2% 5% 2%;
+                background-color: $thirdColor;
+                width: 60vw;
+                }
+
+            input{
+                margin: 2%;
+                color: rgb(140, 140, 140);
+                padding: 10px;
+                font-size: 1rem;
+
+                @media (min-width:786px){
+                margin: 0.7%;
+                padding: 1%;
+                }
+            }
         
-    }
-}
+            .input-kommentar{
+                height: 10vh ;
+            }
 
-form{
-    display: flex;
-    flex-direction: column;
-    background: $secondaryColor;
-    padding: 3% 3% 15% 3%;
-    width: 85vw;
-    margin-top: 1rem;
+            div.container-datum-tid{
+                display: flex;
+                justify-content: space-between;
 
-    @media (min-width:786px){
-        padding: 2% 2% 5% 2%;
-        background-color: $thirdColor;
-        }
+                .input-tid{
+                    width: 35vw;
+                }
+                .input-datum{
+                    width: 35vw;
+                }
+            }
 
-    input{
-        margin: 1.5% 0;
-        color: rgb(140, 140, 140);
-        padding: 1.5%;
+            .submit-bokabord{
+                align-self: flex-end;
+                margin-top: 5%;
 
-        @media (min-width:786px){
-        margin: 0.7%;
-        padding: 1%;
-        }
-        
+                @include button-mobile ();
+            
+                @media (min-width:786px){
+                    @include button-desktop();
+                }
+            }
 
-    }
-    
-    .input-kommentar{
-        height: 10vh ;
-    }
-
-    div.container-datum-tid{
-        display: flex;
-        justify-content: space-between;
-
-        .input-tid{
-            width: 35vw;
-        }
-        .input-datum{
-            width: 35vw;
         }
     }
-
-    .submit-bokabord{
-        align-self: flex-end;
-        margin-top: 5%;
-
-        @include button-mobile ();
-    
-        @media (min-width:786px){
-            @include button-desktop();
-        }
-
-
-    }
-
-    @media (min-width:786px){
-        width: 50vw;
-      }
 }
